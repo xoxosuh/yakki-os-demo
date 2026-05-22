@@ -150,39 +150,47 @@ function _demoIngSearch({ input: rawInput, category, forceNew }) {
   }
   const list = Object.values(cache).map(e => e.input).join(', ');
   return { status: 400, body: {
-    error: '🎯 데모 모드: 새 성분 검색은 비활성화\n\n검색 가능한 ' + Object.keys(cache).length + '개 성분:\n' + list + '\n\n실제 작동 버전은 BEON님 PC에서만 가능합니다 (Claude Code 구독 활용 → 비용 0원).',
+    error: '🎯 데모 모드: 새 성분 검색은 비활성화\n\n검색 가능한 ' + Object.keys(cache).length + '개 성분:\n' + list + '\n\n실제 작동 버전은 비키 PC에서만 가능합니다.',
   }};
 }
 
 function _demoCheck(body) {
   const { copy, category } = body || {};
   if (!copy || !copy.trim()) return { status: 400, body: { error: 'copy 필요' } };
-  const cosmKw = ['シミ', '美白', '若返り', '医師', 'バツグン'];
-  const healthKw = ['コラーゲン', 'プルプル', 'シワ', '臨床試験', 'ドリンク'];
-  const cMatch = cosmKw.filter(k => copy.includes(k)).length;
-  const hMatch = healthKw.filter(k => copy.includes(k)).length;
-  let sample = null;
-  if (category === 'health_food' || (hMatch > 0 && hMatch >= cMatch)) {
-    sample = demoData.adlawSamples.sample_healthfood_violations;
-  } else if (cMatch > 0) {
-    sample = demoData.adlawSamples.sample_cosmetic_violations;
-  } else {
-    return { status: 200, body: { analysis: {
-      violations: [{
-        text: '— 데모 모드 안내 —',
-        law: 'DEMO',
-        article: '',
-        severity: 'caution',
-        reason: '🎯 이 데모는 미리 만든 2개 샘플 카피만 분석 결과를 보여줄 수 있어요.\n\n다음 카피를 복사해서 시도해보세요:\n\n① シミが消える美白化粧水で若返り効果バツグン！医師も推奨の話題の商品。\n\n② 飲むだけで肌がプルプルに！コラーゲンドリンクで若返り、シワも改善。臨床試験で効果実証済み！\n\n실제 작동 버전(BEON님 PC)에서는 어떤 일본어 카피든 분석합니다.',
-        alternatives: [],
-        ref: '',
-      }],
-      safeGuide: [],
-      finalDrafts: [],
-      sources: [],
-    }}};
+
+  // 시그니처 키워드로 5개 샘플 중 best match 찾기
+  const samples = [
+    { key: 'sample_cosmetic_violations', signatures: ['シミが消える', '若返り効果', 'バツグン', '医師も推奨'] },
+    { key: 'sample_healthfood_violations', signatures: ['プルプル', 'コラーゲンドリンク', '臨床試験で効果実証', '飲むだけで'] },
+    { key: 'sample_whitening_ampoule', signatures: ['皮膚施術', '4種の美白成分', '高濃縮アンプル', '肌の内側の深くまで吸収'] },
+    { key: 'sample_cleansing_foam', signatures: ['角栓', 'ニキビの肌悩み', 'クレンジングフォーム', 'BHA成分'] },
+    { key: 'sample_uv_cream', signatures: ['即トーンアップ', 'UVクリーム', '白浮き', 'ワントーン明るい肌'] },
+  ];
+  let bestKey = null;
+  let bestScore = 0;
+  for (const s of samples) {
+    const score = s.signatures.filter(sig => copy.includes(sig)).length;
+    if (score > bestScore) { bestScore = score; bestKey = s.key; }
   }
-  return { status: 200, body: { analysis: sample.analysis } };
+  if (bestKey && bestScore > 0) {
+    return { status: 200, body: { analysis: demoData.adlawSamples[bestKey].analysis } };
+  }
+
+  // 매치 안 됨 — 5개 샘플 카피 안내
+  return { status: 200, body: { analysis: {
+    violations: [{
+      text: '— 데모 모드 안내 —',
+      law: 'DEMO',
+      article: '',
+      severity: 'caution',
+      reason: '🎯 이 데모는 미리 만든 5개 샘플 카피만 분석 결과를 보여줄 수 있어요.\n\n다음 5개 카피 중 하나를 복사해서 시도해보세요:\n\n① [화장수] シミが消える美白化粧水で若返り効果バツグン！医師も推奨の話題の商品。\n\n② [건기식] 飲むだけで肌がプルプルに！コラーゲンドリンクで若返り、シワも改善。臨床試験で効果実証済み！\n\n③ [미백 앰플] 皮膚施術の主原料をそのまま！グルタチオン、ナイアシンアミド、トラネキサム酸、アルブチンの4種の美白成分が配合され、透明感あふれる明るい肌へ導きます。高濃縮アンプルテクスチャーが肌の内側の深くまで吸収され、ツヤ・シミ改善に効果的です。\n\n④ [클렌징 폼] 角栓・黒ずみ・ニキビの肌悩み解決クレンジングフォーム。肌の刺激は最小限にしたやさしい処方。BHA成分が配合された処方で敏感肌の方も安心してお使いいただけます。\n\n⑤ [UV크림] ナイアシンアミド配合で肌の内側もその側も同時にトーンアップ。べたつき、白浮きのないナチュラルトーンアップUVクリームで塗布後、即トーンアップしてくれて、ワントーン明るい肌が叶えます。\n\n실제 작동 버전(비키 PC)에서는 어떤 일본어 카피든 분석합니다.',
+      alternatives: [],
+      ref: '',
+    }],
+    safeGuide: [],
+    finalDrafts: [],
+    sources: [],
+  }}};
 }
 
 function _demoGuide(key) {
@@ -194,7 +202,7 @@ function _demoGuide(key) {
   };
   return { status: 200, body: {
     title: (titles[key] || '법규 가이드') + ' (데모)',
-    markdown: '## 🎯 데모 모드 안내\n\n법규 가이드는 데모에서 요약만 제공됩니다. 실제 작동 버전에서는 BEON님 PC의 `data/references/` 폴더에 저장된 전체 법규 자료를 Claude가 참조해서 답변합니다.\n\n---\n\n## yakki-os가 참조하는 4가지 법규\n\n| 법규 | 대상 |\n|---|---|\n| **薬機法** | 의약품·의약외품·화장품·의료기기 광고 규제 (+ 화장품 효능 56개) |\n| **景品表示法** | 전 카테고리 / 우월·유리 오인·스텔스마케팅 |\n| **健康増進法** | 식품·건기식 건강 효과 표현 |\n| **食品表示法** | 식품·건기식 영양·알레르기 표시 의무 |\n\n실제 작동 시 Claude가 위 4개 자료 + 사용자가 `uploads/`에 추가한 자료까지 모두 참조해서 검사합니다.',
+    markdown: '## 🎯 데모 모드 안내\n\n법규 가이드는 데모에서 요약만 제공됩니다. 실제 작동 버전에서는 비키 PC의 `data/references/` 폴더에 저장된 전체 법규 자료를 Claude가 참조해서 답변합니다.\n\n---\n\n## yakki-os가 참조하는 4가지 법규\n\n| 법규 | 대상 |\n|---|---|\n| **薬機法** | 의약품·의약외품·화장품·의료기기 광고 규제 (+ 화장품 효능 56개) |\n| **景品表示法** | 전 카테고리 / 우월·유리 오인·스텔스마케팅 |\n| **健康増進法** | 식품·건기식 건강 효과 표현 |\n| **食品表示法** | 식품·건기식 영양·알레르기 표시 의무 |\n\n실제 작동 시 Claude가 위 4개 자료 + 사용자가 `uploads/`에 추가한 자료까지 모두 참조해서 검사합니다.',
   }};
 }
 
@@ -224,8 +232,8 @@ document.addEventListener('DOMContentLoaded', () => {
   banner.className = 'demo-banner';
   banner.innerHTML = `
     🎯 <strong>데모 모드</strong> — 이건 yakki-os의 미리보기입니다.
-    검색 가능한 성분 <strong>10개</strong> / 광고법 분석 샘플 <strong>2개</strong>.
-    실제 작동 버전은 BEON(<code>xoxosuh@gmail.com</code>)님 PC에서만 가능 (Claude Code 구독 활용 — 비용 0원).
+    검색 가능한 성분 <strong>10개</strong> / 광고법 분석 샘플 <strong>5개</strong>.
+    실제 작동 버전은 비키 PC에서만 가능.
     <a href="https://github.com/xoxosuh/yakki-os" target="_blank" rel="noopener">📦 전체 코드 보기</a>
   `;
   document.body.insertBefore(banner, document.body.firstChild);
