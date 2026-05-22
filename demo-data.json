@@ -1,0 +1,2403 @@
+{
+  "ingredients": {
+    "cosmetic::히알루론산": {
+      "input": "히알루론산",
+      "input_lang": "ko",
+      "category": "cosmetic",
+      "official": {
+        "ja": "ヒアルロン酸Na",
+        "en_inci": "Sodium Hyaluronate",
+        "latin": null,
+        "ko": "히알루론산나트륨"
+      },
+      "variants": [
+        {
+          "form": "ヒアルロン酸",
+          "type": "총칭 표기",
+          "note": "유리산(free acid) 형태의 명칭. 일본 화장품 전성분 표시에서는 보통 나트륨염(ヒアルロン酸Na) 형태로 표기되며, 광고·제품명·콘셉트 카피에서는 'ヒアルロン酸'을 총칭으로 자주 사용"
+        },
+        {
+          "form": "加水分解ヒアルロン酸",
+          "type": "분자량 변형체",
+          "note": "저분자화 처리된 히알루론산. 피부 침투력 강조 제품에 자주 사용"
+        },
+        {
+          "form": "アセチルヒアルロン酸Na",
+          "type": "유도체",
+          "note": "이른바 '슈퍼 히알루론산'으로 마케팅되는 아세틸화 유도체. 보습 지속력 강조 라인에 사용"
+        },
+        {
+          "form": "ヒアルロン酸ヒドロキシプロピルトリモニウム",
+          "type": "양이온화 유도체",
+          "note": "헤어케어에 주로 사용되는 양이온화 히알루론산"
+        },
+        {
+          "form": "ヒアルロン酸クロスポリマーNa",
+          "type": "가교 유도체",
+          "note": "3D 망상 구조의 가교 히알루론산. '3D 히알루론산' 등으로 마케팅"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "ヒアロルン酸",
+          "reason": "ロ와 ル 순서가 뒤바뀐 일본어 오타. 검색·전성분 매칭 실패 원인"
+        },
+        {
+          "form": "ヒアルロン酸ナトリウム",
+          "reason": "정식 전성분 표시는 'ヒアルロン酸Na'로 약식 표기됨. 풀네임 일본어 표기는 화장품 전성분 표시 관행 위반"
+        },
+        {
+          "form": "ハイアルロン酸",
+          "reason": "영어 'hyaluronic'의 잘못된 음역. 정식 표기는 ヒアルロン"
+        },
+        {
+          "form": "Hyaluronate Sodium",
+          "reason": "INCI 어순 오류. 정식은 'Sodium Hyaluronate'"
+        }
+      ],
+      "info": {
+        "type": "생체 다당류 (글리코사미노글리칸 계열, 미생물 발효 생산)",
+        "function_general": "보습 (수분 보유·각질층 수분량 증가). 1g당 최대 6L의 수분을 끌어당기는 강력한 보습 성분",
+        "usage_areas": {
+          "skincare_overall": "전반 사용",
+          "skincare_detail": "거의 모든 스킨케어 카테고리에 사용 — 토너·에센스·세럼·크림·시트마스크·앰플. 보습 콘셉트 라인의 핵심 성분이며, 시카 라인·수분 라인·고기능 안티에이징 라인에 거의 필수적으로 들어감",
+          "sunscreen": "사용 (보습 보강 목적)",
+          "cleansing": "사용 (보습형 클렌저·클렌징 밀크 등에 자주)",
+          "makeup_base": "사용 (보습 강조 BB·쿠션·메이크업 베이스에 자주)",
+          "color_makeup": "사용 (보습 강조 립밤·립스틱·아이 프라이머 등)",
+          "haircare": "사용 (양이온화 유도체 형태로 보습 트리트먼트·헤어 에센스에 빈번)",
+          "bodycare": "전반 사용 (바디로션·바디크림·핸드크림 등)",
+          "food_use": "사용 (関節 보조 건기식·美容 건기식에 자주. 機能性表示食品으로 '肌の潤い' 표시 사례 존재)"
+        },
+        "common_effects": [
+          "각질층 수분 보유력 증가",
+          "피부 표면 보습막 형성",
+          "건조에 의한 잔주름 완화 (각질층 한정)",
+          "피부 매끄러움 개선",
+          "타 활성 성분의 침투·보조 캐리어 역할"
+        ],
+        "estimated_ad_effects": [
+          "13. 肌にうるおいを与える",
+          "14. 肌のキメを整える",
+          "15. 皮膚をすこやかに保つ",
+          "16. 肌を整える",
+          "17. 皮膚にうるおいを与える",
+          "18. 皮膚の水分、油分を補い保つ",
+          "19. 皮膚の柔軟性を保つ",
+          "20. 皮膚を保護する",
+          "21. 皮膚の乾燥を防ぐ"
+        ],
+        "japan_recognition": "매우 높음",
+        "japan_trend_note": "일본에서 가장 대중적으로 인지되는 보습 성분. 1990년대부터 화장품 핵심 성분으로 자리잡았고, 일반 소비자에게도 '보습 = 히알루론산'이 즉시 떠오를 정도로 인지도 최상. 최근 트렌드는 '저분자·고분자·아세틸화' 다중 히알루론산을 한 제품에 배합한 '○종 히알루론산' 마케팅(예: 5종·7종 히알루론산). 건기식 시장에서도 '肌の潤い' 機能性表示食品 소재로 활발히 활용 (예: キユーピー 히알루론산 시리즈)"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (ヒアルロン酸Na 정식 표기 추정)",
+        "EU CosIng / PCPC INCI Dictionary (Sodium Hyaluronate 매칭 추정)",
+        "대한민국 식약처 화장품 성분 사전 (히알루론산나트륨 표기 추정)",
+        "消費者庁 機能性表示食品 데이터베이스 (식품 용도 사례 참조)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "아세틸히알루론산나트륨",
+            "ja": "アセチルヒアルロン酸Na",
+            "en_inci": "Sodium Acetylated Hyaluronate",
+            "note": "아세틸화로 친유성 강화, 피부 흡착·보습 지속력이 일반 히알루론산의 약 2배. '슈퍼 히알루론산'으로 마케팅"
+          },
+          {
+            "ko": "가수분해히알루론산",
+            "ja": "加水分解ヒアルロン酸",
+            "en_inci": "Hydrolyzed Hyaluronic Acid",
+            "note": "저분자화로 각질층 침투력↑, 내부 보습. 고분자와 병용하여 표층+심층 보습 콘셉트에 사용"
+          },
+          {
+            "ko": "히알루론산크로스폴리머나트륨",
+            "ja": "ヒアルロン酸クロスポリマーNa",
+            "en_inci": "Sodium Hyaluronate Crosspolymer",
+            "note": "가교 처리로 3D 망상 구조 형성. 피부 표면에 보습 필름 형성, '3D 히알루론산'으로 마케팅"
+          },
+          {
+            "ko": "히알루론산하이드록시프로필트라이모늄",
+            "ja": "ヒアルロン酸ヒドロキシプロピルトリモニウム",
+            "en_inci": "Hydroxypropyltrimonium Hyaluronate",
+            "note": "양이온화 유도체. 음전하 모발·각질에 흡착력↑, 헤어케어·보습 지속 강화 라인에 사용"
+          },
+          {
+            "ko": "히알루론산",
+            "ja": "ヒアルロン酸",
+            "en_inci": "Hyaluronic Acid",
+            "note": "유리산 형태. 나트륨염 대비 사용 빈도 낮음. 일부 제형에서 pH 조정 의도로 병용"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "글리세린",
+            "ja": "グリセリン",
+            "en_inci": "Glycerin",
+            "note": "가장 보편적인 보습 페어링. 글리세린(저분자 휴멕턴트) + 히알루론산(고분자 수분 보유)으로 다층 보습 구조 형성"
+          },
+          {
+            "ko": "세라마이드NP",
+            "ja": "セラミドNP",
+            "en_inci": "Ceramide NP",
+            "note": "히알루론산(수분 공급) + 세라마이드(수분 잠금) 조합으로 장벽 보습 콘셉트의 표준. 시카·수분 장벽 라인에 필수"
+          },
+          {
+            "ko": "판테놀",
+            "ja": "パンテノール",
+            "en_inci": "Panthenol",
+            "note": "보습 + 진정 보강. 시카·수분진정 라인에 자주 함께 배합"
+          },
+          {
+            "ko": "나이아신아마이드",
+            "ja": "ナイアシンアミド",
+            "en_inci": "Niacinamide",
+            "note": "보습 베이스(히알루론산) + 다기능 활성(나이아신아마이드)으로 미백·장벽 라인에 빈번"
+          },
+          {
+            "ko": "콜라겐",
+            "ja": "加水分解コラーゲン",
+            "en_inci": "Hydrolyzed Collagen",
+            "note": "안티에이징·탄력 보습 라인의 클래식 페어. 일본 시장에서 '히알루론산 + 콜라겐' 마케팅 매우 강력"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "베타인",
+            "ja": "ベタイン",
+            "en_inci": "Betaine",
+            "note": "휴멕턴트 대체. 저자극·가격↓, 다만 수분 보유력은 히알루론산보다 낮음. 천연 원료 콘셉트에 유리"
+          },
+          {
+            "ko": "트레할로스",
+            "ja": "トレハロース",
+            "en_inci": "Trehalose",
+            "note": "이당류 보습제. 건조 스트레스 보호 기능, 안정성 높음. 보습 보강 대체로 사용"
+          },
+          {
+            "ko": "폴리쿼터늄-51",
+            "ja": "ポリクオタニウム-51",
+            "en_inci": "Polyquaternium-51",
+            "note": "리피듀어. 인지질 모방 폴리머로 피부 흡착·보습 지속력 우수. '슈퍼 히알루론산'의 대체 프리미엄 보습소재"
+          },
+          {
+            "ko": "프로판다이올",
+            "ja": "プロパンジオール",
+            "en_inci": "Propanediol",
+            "note": "글리콜계 휴멕턴트. 활성 성분 용해·보습 보강. 클린뷰티 라인에서 BG·글리세린 대체로 사용"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Hyaluronic Acid",
+          "status": "verified",
+          "source": "COSMILE Europe (EU INCI 파트너 데이터베이스)",
+          "url": "https://cosmileeurope.eu/inci/detail/6550/hyaluronic-acid/",
+          "note": "EU CosIng와 연동된 COSMILE Europe에서 'Hyaluronic Acid'로 등재 확인. 기능: Antistatic, Humectant, Moisturising, Skin Conditioning. 동일 계열로 Sodium Hyaluronate(나트륨염), Hydrolyzed Hyaluronic Acid(가수분해)가 별도 INCI로 존재."
+        },
+        "ko": {
+          "official_name": "히알루론산",
+          "status": "verified",
+          "source": "대한화장품협회 성분사전 (식약처 권장 표준명)",
+          "url": "https://kcia.or.kr/cid/",
+          "note": "식약처는 화장품 전성분 표기시 대한화장품협회 성분사전의 한글명을 사용하도록 권장. '히알루론산'이 표준 한글 표시명. 나트륨염은 별도로 '히알루론산나트륨'."
+        },
+        "latin": {
+          "official_name": null,
+          "status": "not_applicable",
+          "source": "N/A",
+          "url": null,
+          "note": "히알루론산은 글리코사미노글리칸 계열 다당류로, 미생물 발효(스트렙토코쿠스속) 또는 동물(닭벼슬) 유래의 생체 고분자. 식물 분류군이 아니므로 학명 해당 없음."
+        },
+        "ja": {
+          "official_name": "ヒアルロン酸",
+          "status": "uncertain",
+          "source": "JCIA 化粧品成分表示名称リスト (참조), 검색 보조 자료",
+          "url": "https://www.jcia.org/user/business/ingredients/namelist",
+          "note": "JCIA 공식 명칭 리스트에 '化粧品の成分表示名称リスト' 검색 기능이 있으나 인터랙티브 폼이라 직접 fetch 불가. 업계 표준으로 'ヒアルロン酸'이 통용되며 INCI 'Hyaluronic Acid'에 대응. 나트륨염은 'ヒアルロン酸Na'. cosmetic-info.jp(GeoIP 차단)는 인용 제외. JCIA 정식 PDF 사본까지 검증 못 해서 uncertain으로 표시."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-21T19:11:37.657Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::글루타치온": {
+      "input": "글루타치온",
+      "input_lang": "ko",
+      "category": "cosmetic",
+      "official": {
+        "ja": "グルタチオン",
+        "en_inci": "Glutathione",
+        "latin": null,
+        "ko": "글루타치온"
+      },
+      "variants": [
+        {
+          "form": "還元型グルタチオン",
+          "type": "기능 강조 표기",
+          "note": "환원형(L-glutathione) 강조 시 사용. 식품·건기식·미용 보조제에서 자주 등장"
+        },
+        {
+          "form": "L-グルタチオン",
+          "type": "이성질체 표기",
+          "note": "L형 강조 표기. 학술·원료 스펙시트에서 사용"
+        },
+        {
+          "form": "GSH",
+          "type": "약칭",
+          "note": "성분 설명·논문 인용 시 사용. 제품 표시에는 거의 안 씀"
+        },
+        {
+          "form": "白玉点滴 (글루타치온 주사)",
+          "type": "속칭",
+          "note": "미용 클리닉 시술명. 화장품 표시명은 아님"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "グルタチオネ",
+          "reason": "어미 'ネ' 오타. 정식은 'オン'"
+        },
+        {
+          "form": "グルタシオン",
+          "reason": "フランス어 음역식 오기. 일본 표기는 'チ'"
+        },
+        {
+          "form": "グルタチョン",
+          "reason": "'チオ'를 'チョ'로 축약한 오기"
+        },
+        {
+          "form": "グルタオン",
+          "reason": "'チ' 누락 오타"
+        }
+      ],
+      "info": {
+        "type": "트리펩타이드 (글루타민산·시스테인·글리신)",
+        "function_general": "항산화·미백(멜라닌 환원)·해독 보조. 화장품에서는 주로 항산화·밝기 케어 콘셉트",
+        "usage_areas": {
+          "skincare_overall": "일부 사용",
+          "skencare_detail": "세럼·앰플·크림·시트마스크 (브라이트닝·항산화 라인). 단독보다는 비타민C·나이아신아마이드와 병용이 일반적",
+          "skincare_detail": "세럼·앰플·크림·시트마스크의 브라이트닝/안티에이징 라인에서 사용. 비타민C·나이아신아마이드와 병용 다수",
+          "sunscreen": "거의 없음",
+          "cleansing": "거의 없음",
+          "makeup_base": "거의 없음",
+          "color_makeup": "거의 없음",
+          "haircare": "거의 없음",
+          "bodycare": "일부 사용 (미백·톤업 바디 제품)",
+          "food_use": "사용 (일본 機能性表示食品으로 '肌の明るさ' 기능성 표시 사례 있음. 건기식·미용 음료·서플리먼트에서 활발)"
+        },
+        "common_effects": [
+          "항산화 (활성산소 제거)",
+          "멜라닌 환원 → 피부 톤 정돈",
+          "간 해독 보조 (체내 작용, 화장품 외)",
+          "피부 칙칙함 케어"
+        ],
+        "estimated_ad_effects": [
+          "18. 肌を整える",
+          "19. 肌のキメを整える",
+          "32. 皮膚をすこやかに保つ",
+          "33. 肌を滑らかにする"
+        ],
+        "japan_recognition": "높음",
+        "japan_trend_note": "일본에서는 화장품보다 '飲む美白(마시는 미백)' 건기식·서플리먼트 카테고리에서 압도적으로 유명. 機能性表示食品 신고로 '肌の明るさ・水分を維持' 표시 인정 사례 다수 (예: 키유피·시세이도 등). 화장품에서는 '美白' 약기법 효능 표현 불가 → '透明感' '明るい印象' 같은 우회 표현으로만 사용 가능. 미용 클리닉 '白玉点滴' 트렌드로 일반 소비자 인지도 매우 높음"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정: グルタチオン)",
+        "EU CosIng (INCI: Glutathione 매칭)",
+        "한국 식약처 화장품 성분 사전 (한국 표기: 글루타치온)",
+        "消費者庁 機能性表示食品 데이터베이스 (건기식 기능성 표시 사례)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "산화형 글루타치온",
+            "ja": "酸化型グルタチオン",
+            "en_inci": "Glutathione Disulfide",
+            "note": "GSSG. 환원형(GSH)이 산화된 형태. 안정성 높아 원료로 사용되나 활성은 환원형이 강함"
+          },
+          {
+            "ko": "S-아세틸글루타치온",
+            "ja": "S-アセチルグルタチオン",
+            "en_inci": "S-Acetyl Glutathione",
+            "note": "아세틸화 유도체. 경구 흡수율·안정성 개선형. 서플리먼트에서 주로 사용"
+          },
+          {
+            "ko": "리포좀 글루타치온",
+            "ja": "リポソーム化グルタチオン",
+            "en_inci": "Liposomal Glutathione",
+            "note": "리포좀 캡슐화로 흡수·침투 강화. 고기능 세럼·서플리먼트에 사용"
+          },
+          {
+            "ko": "L-시스테인",
+            "ja": "L-システイン",
+            "en_inci": "Cysteine",
+            "note": "글루타치온 구성 아미노산 중 합성 율속 인자. 단독으로도 미백 보조제로 활발히 사용"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "아스코르브산 (비타민C)",
+            "ja": "アスコルビン酸",
+            "en_inci": "Ascorbic Acid",
+            "note": "항산화 시너지. 글루타치온 환원 사이클 보조. 브라이트닝 라인 표준 페어링"
+          },
+          {
+            "ko": "나이아신아마이드",
+            "ja": "ナイアシンアミド",
+            "en_inci": "Niacinamide",
+            "note": "멜라닌 전이 억제 + 글루타치온 환원 시너지. 일본 브라이트닝 세럼 단골 조합"
+          },
+          {
+            "ko": "트라넥삼산",
+            "ja": "トラネキサム酸",
+            "en_inci": "Tranexamic Acid",
+            "note": "의약외품 미백 유효성분. 글루타치온과 톤업 콘셉트에서 자주 페어링 (단 의약외품 등록 시)"
+          },
+          {
+            "ko": "알파리포산",
+            "ja": "アルファリポ酸",
+            "en_inci": "Thioctic Acid",
+            "note": "글루타치온 재생 보조 항산화제. '飲む美白' 서플리먼트 조합 단골"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "아스코르브산 유도체",
+            "ja": "アスコルビルグルコシド",
+            "en_inci": "Ascorbyl Glucoside",
+            "note": "안정형 비타민C. 글루타치온 대비 가격↓·안정성↑. 항산화·톤케어 대체 가능"
+          },
+          {
+            "ko": "알부틴",
+            "ja": "アルブチン",
+            "en_inci": "Arbutin",
+            "note": "티로시나아제 억제형 미백. 글루타치온(환원형) 대비 멜라닌 생성 차단 메커니즘. 의약외품 등록 가능"
+          },
+          {
+            "ko": "에르고티오네인",
+            "ja": "エルゴチオネイン",
+            "en_inci": "Ergothioneine",
+            "note": "천연 항산화 아미노산. 안정성·지속성 우수. 최근 일본 안티에이징 트렌드 성분"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Glutathione",
+          "status": "verified",
+          "source": "EU CosIng / INCI Decoder",
+          "url": "https://incidecoder.com/ingredients/glutathione",
+          "note": "CAS 70-18-8, EC 200-725-4, COSING REF 34021. INCI 라벨링명은 'Glutathione'. CosIng 시스템 화학명은 'Glycine, N-(N-L-.Gamma.-Glutamyl-L-Cysteinyl)-'이나 표시용 INCI명은 'Glutathione'."
+        },
+        "ko": {
+          "official_name": "글루타티온",
+          "status": "uncertain",
+          "source": "대한화장품협회(KCIA) 성분사전 검색 결과",
+          "url": "https://kcia.or.kr/cid/search/ingd_word.php?sw=%EA%B8%80%EB%A3%A8%ED%83%80%ED%8B%B0%EC%98%A8",
+          "note": "한국 식약처/대한화장품협회 표준 표기는 '글루타티온'(입력값 '글루타치온'은 일본식 발음 차용). KCIA 성분사전 검색 페이지가 발견됐으나 동적 페이지라 직접 fetch 시 본문 추출 실패. 약학정보원·여러 화장품 브랜드(닥터오라클·폴라초이스·퍼셀 등)에서 '글루타티온' 표기 일관됨. 또한 식약처는 글루타치온을 화장품 미백 기능성 고시 성분으로 지정하지 않은 상태이며, 일반 화장품 성분으로만 사용 가능."
+        },
+        "latin": {
+          "official_name": null,
+          "status": "not_applicable",
+          "source": "N/A",
+          "url": null,
+          "note": "글루타치온은 합성/생합성 트리펩타이드(γ-글루타밀-시스테이닐-글라이신)로 식물 추출물이 아님. 학명 해당 없음."
+        },
+        "ja": {
+          "official_name": "グルタチオン",
+          "status": "verified",
+          "source": "JCIA 化粧品の成分表示名称リスト / iwasedatabase",
+          "url": "https://www.jcia.org/user/business/ingredients/namelist",
+          "note": "JCIA '化粧品の成分表示名称リスト'에 성분번호 551127로 'グルタチオン' 수록 확인. 의약부외품 표시명도 동일하게 'グルタチオン'(규격코드 51, 성분코드 111602), INCI: Glutathione. JCIA 본 리스트는 회원제 PDF지만 검색 결과 메타데이터로 표기 일치 확인. cosmetic-info.jp 페이지가 검색에 나왔으나 GeoIP 차단으로 직접 검증 미실시(인용 안 함)."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-21T19:45:06.760Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::세라마이드": {
+      "input": "세라마이드",
+      "input_lang": "ko",
+      "category": "cosmetic",
+      "official": {
+        "ja": "セラミドNP",
+        "en_inci": "Ceramide NP",
+        "latin": null,
+        "ko": "세라마이드 엔피"
+      },
+      "variants": [
+        {
+          "form": "セラミド",
+          "type": "총칭",
+          "note": "세라마이드 계열 전체를 통칭할 때 사용. 일본 화장품 광고·제품명에서 가장 흔히 등장하는 표기"
+        },
+        {
+          "form": "セラミド3",
+          "type": "구명칭(舊命名)",
+          "note": "2006년 INCI 개정 전 명칭. 현재도 일본 구제품·소비자 인지도 측면에서 병기되는 경우 많음"
+        },
+        {
+          "form": "セラミドAP",
+          "type": "INCI 음역",
+          "note": "Ceramide AP (구 セラミド6II). α-hydroxy 타입"
+        },
+        {
+          "form": "セラミドEOP",
+          "type": "INCI 음역",
+          "note": "Ceramide EOP (구 セラミド1). 장벽 강화 타입, 고급 라인에 자주 사용"
+        },
+        {
+          "form": "セラミドNG",
+          "type": "INCI 음역",
+          "note": "Ceramide NG (구 セラミド2). 보습 타입"
+        },
+        {
+          "form": "ヒト型セラミド",
+          "type": "마케팅 통칭",
+          "note": "'인체형 세라마이드' — 합성 セラミドNP·AP·EOP·NG·NS·AS·AH 등을 묶어 부르는 일본 시장 마케팅 용어. 인지도 매우 높음"
+        },
+        {
+          "form": "天然セラミド",
+          "type": "마케팅 통칭",
+          "note": "말·쌀 등 동식물 유래 세라마이드. コメヌカスフィンゴ糖脂質 등"
+        },
+        {
+          "form": "植物性セラミド",
+          "type": "마케팅 통칭",
+          "note": "쌀·곤약·밀 유래. グルコシルセラミド로 표기되는 경우 많음"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "セラマイド",
+          "reason": "한국어 '세라마이드' 발음을 그대로 옮긴 잘못된 표기. 일본어 정식 표기는 'セラミド'"
+        },
+        {
+          "form": "セラミット",
+          "reason": "어미 오타. 'ド'가 정확"
+        },
+        {
+          "form": "シラミド",
+          "reason": "'セ'와 'シ' 혼동 오타"
+        },
+        {
+          "form": "セレミド",
+          "reason": "'ラ'와 'レ' 혼동 오타"
+        }
+      ],
+      "info": {
+        "type": "합성 성분 (스핑고지질 계열) / 일부는 동식물 유래",
+        "function_general": "보습·피부 장벽 강화·각질층 수분 유지",
+        "usage_areas": {
+          "skincare_overall": "전반 사용",
+          "skincare_detail": "세럼·크림·앰플·아이크림·마스크 전반. 특히 고보습·장벽 강화 라인(バリアケア)·민감성 라인의 핵심 성분. 최근 '시카+세라마이드' 조합 트렌드",
+          "sunscreen": "사용 (보습 보조 성분으로 자주 첨가)",
+          "cleansing": "사용 (저자극·고보습 클렌저)",
+          "makeup_base": "사용 (스킨케어 베이스·쿠션 파운데이션 보습 성분)",
+          "color_makeup": "일부 사용 (립밤·립스틱 보습 성분)",
+          "haircare": "사용 (헤어 큐티클 보호·트리트먼트)",
+          "bodycare": "사용 (바디로션·바디크림 보습)",
+          "food_use": "일부 사용 (機能性表示食品 '피부 수분 유지' 기능성 표시 — 米由来グルコシルセラミド 등)"
+        },
+        "common_effects": [
+          "피부 장벽 강화",
+          "각질층 수분 유지·보습",
+          "건조 피부 개선",
+          "피부 거칠어짐 방지",
+          "민감성·아토피 피부 진정 보조"
+        ],
+        "estimated_ad_effects": [
+          "20. 肌を整える",
+          "21. 肌のキメを整える",
+          "22. 皮膚をすこやかに保つ",
+          "23. 肌にうるおいを与える",
+          "24. 肌の水分・油分を補い保つ",
+          "25. 肌をひきしめる",
+          "26. 肌にツヤを与える",
+          "27. 肌を滑らかにする",
+          "29. 皮膚をすこやかに保つ",
+          "30. 皮膚にうるおいを与える",
+          "31. 皮膚の水分、油分を補い保つ",
+          "32. 皮膚の柔軟性を保つ",
+          "33. 皮膚を保護する",
+          "34. 皮膚の乾燥を防ぐ"
+        ],
+        "japan_recognition": "매우 높음",
+        "japan_trend_note": "일본 시장 인지도 최상위권. 'ヒト型セラミド'(인체형 세라마이드) 표기는 고급 라인의 상징으로 정착. 2020년대 들어 한국 '시카+세라마이드' 조합 트렌드가 일본에 역수입되며 더욱 확산. ドラッグストア 저가 라인부터 백화점 고급 라인까지 전 가격대 사용. 機能性表示食品에서도 '肌の水分を保つ' 기능성 표시로 인정받아 식품 시장에도 진출"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)",
+        "消費者庁 機能性表示食品 데이터베이스 (米由来グルコシルセラミド 관련)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "세라마이드 엔지",
+            "ja": "セラミドNG",
+            "en_inci": "Ceramide NG",
+            "note": "구 세라마이드2. 가장 대중적인 보습 타입, 가성비 좋고 안정성 높음"
+          },
+          {
+            "ko": "세라마이드 에이피",
+            "ja": "セラミドAP",
+            "en_inci": "Ceramide AP",
+            "note": "구 세라마이드6II. α-hydroxy 타입, 턴오버·키메 정돈에 강점"
+          },
+          {
+            "ko": "세라마이드 이오피",
+            "ja": "セラミドEOP",
+            "en_inci": "Ceramide EOP",
+            "note": "구 세라마이드1. 장벽 강화 효과 가장 강력, 고급 라인의 시그니처"
+          },
+          {
+            "ko": "세라마이드 에이에스",
+            "ja": "セラミドAS",
+            "en_inci": "Ceramide AS",
+            "note": "구 세라마이드5. 보습+장벽 강화 균형형"
+          },
+          {
+            "ko": "피토스핑고신",
+            "ja": "フィトスフィンゴシン",
+            "en_inci": "Phytosphingosine",
+            "note": "세라마이드 전구체. 피부 자체 세라마이드 생성 촉진, 항균 효과도"
+          },
+          {
+            "ko": "글루코실세라마이드",
+            "ja": "グルコシルセラミド",
+            "en_inci": "Glucosylceramide",
+            "note": "쌀·곤약 유래 식물성 세라마이드. 機能性表示食品 '피부 수분' 표시 가능"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "센텔라아시아티카추출물",
+            "ja": "ツボクサエキス",
+            "en_inci": "Centella Asiatica Extract",
+            "note": "진정+장벽 강화 보강, 시카+세라마이드 라인의 골든 조합 (한일 공통 트렌드)"
+          },
+          {
+            "ko": "히알루론산",
+            "ja": "ヒアルロン酸Na",
+            "en_inci": "Sodium Hyaluronate",
+            "note": "표층 수분 공급+심층 장벽 보호, 보습 라인 기본 페어링"
+          },
+          {
+            "ko": "콜레스테롤",
+            "ja": "コレステロール",
+            "en_inci": "Cholesterol",
+            "note": "세라마이드:콜레스테롤:지방산 3:1:1 황금비율, 각질층 라멜라 구조 재현"
+          },
+          {
+            "ko": "나이아신아마이드",
+            "ja": "ナイアシンアミド",
+            "en_inci": "Niacinamide",
+            "note": "피부 자체 세라마이드 생성 촉진, 미백+장벽 동시 라인에 자주"
+          },
+          {
+            "ko": "판테놀",
+            "ja": "パンテノール",
+            "en_inci": "Panthenol",
+            "note": "진정+보습 보강, 민감성·시카 라인 단골 페어링"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "스쿠알란",
+            "ja": "スクワラン",
+            "en_inci": "Squalane",
+            "note": "피부 친화 유성 보습, 장벽 강화 효과는 낮지만 안정성·가성비 우수"
+          },
+          {
+            "ko": "콜레스테롤",
+            "ja": "コレステロール",
+            "en_inci": "Cholesterol",
+            "note": "각질층 지질 구성 성분, 세라마이드와 유사한 장벽 강화 메커니즘"
+          },
+          {
+            "ko": "피토스테롤",
+            "ja": "フィトステロール",
+            "en_inci": "Phytosterols",
+            "note": "식물성 콜레스테롤, 장벽 강화+항염, 비건 라인 대체재"
+          },
+          {
+            "ko": "베타글루칸",
+            "ja": "β-グルカン",
+            "en_inci": "Beta-Glucan",
+            "note": "고분자 보습+면역 부스팅, 진정 효과 강점"
+          }
+        ]
+      },
+      "verified": false,
+      "verification": {
+        "en_inci": {
+          "official_name": "Ceramide (generic term; specific INCI names are CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CERAMIDE NG, CERAMIDE AS, CERAMIDE NS, etc.)",
+          "status": "uncertain",
+          "source": "EU CosIng / INCI Decoder / SpecialChem",
+          "url": "https://ec.europa.eu/growth/tools-databases/cosing/",
+          "note": "'세라마이드'는 일반명. EU CosIng에는 단일 'Ceramide' INCI 항목이 없고, 숫자형(CERAMIDE 1/2/3/6 II)과 알파벳형(CERAMIDE NP/AP/EOP/NG/AS/NS) 변종이 등록됨. 2014년 5월부터 숫자형 → 알파벳형으로 명명 전환(예: Ceramide 3 → CERAMIDE NP). 실제 표시는 변종 단위로 해야 함."
+        },
+        "ko": {
+          "official_name": "세라마이드 (변종별: 세라마이드NP, 세라마이드AP, 세라마이드EOP, 세라마이드NG, 세라마이드AS 등)",
+          "status": "uncertain",
+          "source": "대한화장품협회 성분사전 / 식약처 화장품 원료성분정보",
+          "url": "https://kcia.or.kr/cid/main/",
+          "note": "한국 표시는 한글 음역 '세라마이드'를 사용하며, 변종 코드(NP, AP 등)를 그대로 붙이는 방식이 표준. 단독 '세라마이드'는 일반명이며 전성분 표시상으로는 변종 단위로 기재해야 정확. 직접 KCIA 성분사전 검색 페이지 fetch는 못 했음(POST 검색)."
+        },
+        "latin": {
+          "official_name": null,
+          "status": "not_applicable",
+          "source": "N/A",
+          "url": null,
+          "note": "세라마이드는 합성 또는 효모 발효 생합성으로 제조되는 스핑고지질 계열. 식물 추출물이 아니므로 학명 해당 없음."
+        },
+        "ja": {
+          "official_name": "セラミド (변종별: セラミドNP, セラミドAP, セラミドEOP, セラミドNG, セラミドAS 등)",
+          "status": "uncertain",
+          "source": "JCIA 化粧品の成分表示名称リスト / 化粧品成分オンライン",
+          "url": "https://www.jcia.org/user/business/ingredients/namelist",
+          "note": "JCIA 표시명도 '세라미도(セラミド) + 변종 코드' 방식이 표준. 단독 'セラミド'는 일반명. JCIA 공식 리스트는 검색 UI 기반(직접 fetch 어려움), cosmetic-info.jp는 일본 GeoIP 차단으로 접근 불가. cosmetic-ingredients.org 등 보조 출처에서 명명 규칙 확인."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-22T05:21:25.087Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::병풀추출물": {
+      "input": "병풀추출물",
+      "input_lang": "ko",
+      "category": "cosmetic",
+      "official": {
+        "ja": "ツボクサエキス",
+        "en_inci": "Centella Asiatica Extract",
+        "latin": "Centella asiatica",
+        "ko": "병풀추출물"
+      },
+      "variants": [
+        {
+          "form": "センテラアジアチカエキス",
+          "type": "INCI 음역",
+          "note": "INCI명을 그대로 카타카나로 옮긴 표기. 수입 브랜드·K-뷰티 제품에서 자주 사용"
+        },
+        {
+          "form": "シカ",
+          "type": "별칭·약칭",
+          "note": "Cica (시카) — 마케팅 콘셉트명. 성분표 정식 표기로는 사용 불가, 제품명·콘셉트 카피에 사용"
+        },
+        {
+          "form": "ゴツコラエキス",
+          "type": "별칭",
+          "note": "Gotu Kola (고투콜라) — 한방·아유르베다 문맥에서 사용되는 별칭. 일본 화장품 성분표 표기로는 드묾"
+        },
+        {
+          "form": "ツボクサ葉エキス",
+          "type": "부위 명시",
+          "note": "잎 추출물을 강조할 때 사용. JCIA 기준 정식 표기는 'ツボクサエキス'"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "ツボグサエキス",
+          "reason": "탁음(グ) 오타. 정확한 표기는 ツボクサ(쓰보쿠사)"
+        },
+        {
+          "form": "センテラアシアチカエキス",
+          "reason": "Asiatica 음역 오류. 표준 음역은 アジアチカ"
+        },
+        {
+          "form": "ツボクサ抽出液",
+          "reason": "'抽出液'은 일본 화장품 성분 표시명에서 사용하지 않음. 정식은 'エキス'"
+        },
+        {
+          "form": "シカエキス",
+          "reason": "シカ는 마케팅 별칭. 성분표 정식 표기로 사용 불가"
+        }
+      ],
+      "info": {
+        "type": "식물 추출물",
+        "function_general": "피부 진정·항염·재생·콜라겐 합성 촉진·항노화",
+        "usage_areas": {
+          "skincare_overall": "전반 사용",
+          "skincare_detail": "토너·세럼·크림·앰플·마스크·스팟 케어 전반. 특히 シカ 라인(진정·민감성 케어)의 핵심 성분. 손상 피부·여드름 후 케어·레드니스 케어 제품군에서 압도적으로 많이 사용",
+          "sunscreen": "사용 (진정 기능 추가용으로 시카 선크림 라인 다수)",
+          "cleansing": "사용 (저자극·민감성 클렌저)",
+          "makeup_base": "사용 (시카 톤업크림·시카 BB 등 진정 콘셉트 베이스)",
+          "color_makeup": "거의 없음",
+          "haircare": "사용 (두피 진정·민감성 두피 케어 샴푸·트리트먼트)",
+          "bodycare": "사용 (바디 진정 로션·바디 시카 라인)",
+          "food_use": "사용 (한방·아유르베다 건강식품 'Gotu Kola'로 사용, 일본 일반 건기식에서는 비주류)"
+        },
+        "common_effects": [
+          "피부 진정·항염",
+          "상처 치유·피부 재생 촉진",
+          "콜라겐 합성 촉진",
+          "피부 장벽 강화",
+          "항산화·항노화",
+          "혈류 개선 (한방 문맥)"
+        ],
+        "estimated_ad_effects": [
+          "22. 肌荒れを防ぐ",
+          "23. 肌をひきしめる",
+          "29. 皮膚にうるおいを与える",
+          "30. 皮膚の水分、油分を補い保つ",
+          "31. 皮膚の柔軟性を保つ",
+          "32. 皮膚を保護する",
+          "33. 皮膚の乾燥を防ぐ",
+          "34. 肌を整える",
+          "35. 肌のキメを整える"
+        ],
+        "japan_recognition": "매우 높음",
+        "japan_trend_note": "2020년 이후 シカ(Cica) 트렌드가 일본에서도 K-뷰티를 중심으로 폭발적으로 확산. VT Cosmetics, Dr.Jart+, COSRX, Abib 등의 시카 라인이 @cosme·Qoo10JP·Amazon JP에서 베스트셀러 상위 점유. 일본 로컬 브랜드(明色化粧品, ロート 등)도 시카 라인 출시. 민감성·여드름·레드니스 케어 카테고리의 표준 성분으로 자리잡음"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)",
+        "PCPC INCI Dictionary (보조)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "마데카소사이드",
+            "ja": "マデカッソシド",
+            "en_inci": "Madecassoside",
+            "note": "병풀 활성 성분 4종(TECA) 중 하나. 강한 항염·상처 치유, 콜라겐 합성 촉진. 시카 라인의 핵심 단일 활성"
+          },
+          {
+            "ko": "아시아티코사이드",
+            "ja": "アシアチコシド",
+            "en_inci": "Asiaticoside",
+            "note": "병풀 활성 성분 4종 중 하나. 상처 치유·항염 효과, 콜라겐 합성 촉진 강력"
+          },
+          {
+            "ko": "마데카식애씨드",
+            "ja": "マデカッソ酸",
+            "en_inci": "Madecassic Acid",
+            "note": "병풀 활성 성분 4종 중 하나(트리테르페노이드 산). 항염·항노화 작용"
+          },
+          {
+            "ko": "아시아틱애씨드",
+            "ja": "アシアチン酸",
+            "en_inci": "Asiatic Acid",
+            "note": "병풀 활성 성분 4종 중 하나. 콜라겐 합성·상처 치유·항산화. 진정+항노화 양쪽으로 사용"
+          },
+          {
+            "ko": "병풀잎수",
+            "ja": "ツボクサ葉水",
+            "en_inci": "Centella Asiatica Leaf Water",
+            "note": "병풀잎의 증류수 형태. 추출물보다 함량은 낮지만 토너·미스트의 베이스로 자주 사용"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "판테놀",
+            "ja": "パンテノール",
+            "en_inci": "Panthenol",
+            "note": "프로비타민B5. 보습+진정+장벽 강화로 시카 라인의 표준 페어링"
+          },
+          {
+            "ko": "나이아신아마이드",
+            "ja": "ナイアシンアミド",
+            "en_inci": "Niacinamide",
+            "note": "장벽 강화·미백·피지 조절. 시카+나이아신아마이드는 민감성+톤업 콘셉트의 표준 조합"
+          },
+          {
+            "ko": "히알루론산",
+            "ja": "ヒアルロン酸Na",
+            "en_inci": "Sodium Hyaluronate",
+            "note": "강력 보습. 시카의 진정 효능을 보습으로 보강, 거의 모든 시카 라인 토너·세럼에 함께 사용"
+          },
+          {
+            "ko": "알란토인",
+            "ja": "アラントイン",
+            "en_inci": "Allantoin",
+            "note": "진정·각질 완화. 시카와 함께 손상 피부·여드름 후 케어 콘셉트에 빈번"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "병풀잎추출물 (부위 변경)",
+            "ja": "ツボクサ葉エキス",
+            "en_inci": "Centella Asiatica Leaf Extract",
+            "note": "같은 식물의 잎만 사용. 활성 성분 농도가 더 표준화된 추출, 동등 진정 효능"
+          },
+          {
+            "ko": "병풀꽃/잎/줄기추출물",
+            "ja": "ツボクサ花/葉/茎エキス",
+            "en_inci": "Centella Asiatica Flower/Leaf/Stem Extract",
+            "note": "전초 추출. 활성 성분 범위가 더 넓음, 종합 진정에 사용"
+          },
+          {
+            "ko": "병풀추출물발효여과물",
+            "ja": "ツボクサ発酵液",
+            "en_inci": "Centella Asiatica Extract Ferment Filtrate",
+            "note": "발효 처리로 흡수율·바이오어베일러빌리티 향상, 프리미엄 시카 라인에서 사용"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Centella Asiatica Extract",
+          "status": "verified",
+          "source": "EU CosIng",
+          "url": "https://ec.europa.eu/growth/tools-databases/cosing/",
+          "note": "CosIng ID 75075, EC# 283-640-5. 부위 비특정 전초 추출물. 부위 특정 변형 INCI (Centella Asiatica Leaf Extract, Leaf/Stem Extract, Root Extract 등) 별도 존재."
+        },
+        "ko": {
+          "official_name": "병풀추출물",
+          "status": "verified",
+          "source": "식약처 화장품 원료성분정보 / 대한화장품협회 성분사전",
+          "url": "https://kcia.or.kr/cid/search/ingd_list.php",
+          "note": "식약처 의약품안전나라(nedrug.mfds.go.kr)·대한화장품협회 성분사전에 등재된 표준 한글 표시명."
+        },
+        "latin": {
+          "official_name": "Centella asiatica (L.) Urb.",
+          "status": "verified",
+          "source": "GBIF Backbone Taxonomy",
+          "url": "https://www.gbif.org/species/3034128",
+          "note": "Apiaceae(미나리과). 일반명: Indian pennywort, gotu kola. 식물 추출물이므로 학명 적용 가능."
+        },
+        "ja": {
+          "official_name": "ツボクサエキス",
+          "status": "uncertain",
+          "source": "JCIA 화장품성분표시명칭 (간접 확인)",
+          "url": "https://www.jcia.org/",
+          "note": "JCIA 「化粧品成分表示名称辞典」 공식 PDF는 회원제 접근. 복수의 일본 화장품 업계·전문 자료에서 표시명 'ツボクサエキス' 일관 확인. 의약부외품 명칭도 동일하게 'ツボクサエキス'. cosmetic-info.jp는 GeoIP 차단으로 검증 불가하여 인용 제외."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-21T19:06:13.920Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::상황버섯추출물": {
+      "input": "상황버섯추출물",
+      "input_lang": "ko",
+      "category": "cosmetic",
+      "official": {
+        "ja": "メシマコブエキス",
+        "en_inci": "Phellinus Linteus Extract",
+        "latin": "Phellinus linteus",
+        "ko": "상황버섯추출물"
+      },
+      "variants": [
+        {
+          "form": "メシマコブ抽出物",
+          "type": "한자/카타카나 혼합",
+          "note": "기능성 소재 카탈로그·논문에서 자주 사용"
+        },
+        {
+          "form": "ファレリヌスリンテウスエキス",
+          "type": "INCI 음역",
+          "note": "INCI 직역 카타카나, 학술·원료 스펙시트에서 사용"
+        },
+        {
+          "form": "桑黄エキス",
+          "type": "한자 표기",
+          "note": "한방·건강식품 라인에서 사용되는 한자 표기 (상황 = 桑黄)"
+        },
+        {
+          "form": "サンファンエキス",
+          "type": "한국어 음역",
+          "note": "한국 브랜드 일본 진출 시 한국식 발음을 살린 마케팅 표기"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "メシマコブエクストラクト",
+          "reason": "エキス가 표준, エクストラクト는 일반적 표기가 아님"
+        },
+        {
+          "form": "サンファンバソッエキス",
+          "reason": "한국어 '상황버섯' 전체를 음역한 비공식 표기, JCIA 사전에 없음"
+        },
+        {
+          "form": "メシマコブキノコエキス",
+          "reason": "メシマコブ 자체가 버섯을 가리키므로 キノコ 중복"
+        }
+      ],
+      "info": {
+        "type": "식물(균류) 추출물 - 버섯류 추출물",
+        "function_general": "항산화·면역조절·피부 진정·항노화",
+        "usage_areas": {
+          "skincare_overall": "일부 사용",
+          "skincare_detail": "세럼·크림·앰플 중심, 한방·동양 컨셉의 안티에이징/진정 라인에 사용. 한국 브랜드의 프리미엄·한방 라인에서 자주 등장",
+          "sunscreen": "거의 없음",
+          "cleansing": "거의 없음",
+          "makeup_base": "거의 없음",
+          "color_makeup": "거의 없음",
+          "haircare": "거의 없음 (일부 두피 진정 제품에서 사용)",
+          "bodycare": "거의 없음",
+          "food_use": "건기식 사용 (β-글루칸 면역 케어 소재로 일본 시장에서 인지도 있음)"
+        },
+        "common_effects": [
+          "항산화",
+          "피부 진정",
+          "수분 유지",
+          "피부 컨디셔닝",
+          "항염 효과",
+          "피부 탄력 보조"
+        ],
+        "estimated_ad_effects": [
+          "3. 肌を整える",
+          "4. 肌のキメを整える",
+          "17. 皮膚にうるおいを与える",
+          "18. 皮膚の水分、油分を補い保つ",
+          "19. 皮膚のうるおいを保つ",
+          "20. 皮膚を保護する",
+          "22. 肌荒れを防ぐ",
+          "23. 肌をひきしめる",
+          "43. 肌にはりを与える",
+          "44. 肌にツヤを与える"
+        ],
+        "japan_recognition": "보통",
+        "japan_trend_note": "일본에서는 건기식 영역(메시마코브 = β-글루칸 면역 케어 소재)으로 더 잘 알려져 있음. 화장품에서는 한국 한방·프리미엄 안티에이징 라인을 통해 인지도 형성 중. 동양 약재 기반 안티에이징 트렌드(설화수·후 등)와 함께 점진적 확산 단계"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "상황버섯다당체",
+            "ja": "メシマコブ多糖体",
+            "en_inci": "Phellinus Linteus Polysaccharide",
+            "note": "상황버섯의 핵심 활성 성분, β-글루칸 계열로 면역조절·항산화 효과가 가장 강한 분획"
+          },
+          {
+            "ko": "상황버섯균사체추출물",
+            "ja": "メシマコブ菌糸体エキス",
+            "en_inci": "Phellinus Linteus Mycelium Extract",
+            "note": "자실체 대신 균사체 배양으로 추출, 안정적 대량 생산 가능, 활성 성분은 자실체와 유사"
+          },
+          {
+            "ko": "상황버섯발효추출물",
+            "ja": "メシマコブ発酵エキス",
+            "en_inci": "Phellinus Linteus Ferment Extract",
+            "note": "발효를 통해 저분자화한 추출물, 피부 흡수율 향상·항산화력 강화"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "인삼추출물",
+            "ja": "オタネニンジン根エキス",
+            "en_inci": "Panax Ginseng Root Extract",
+            "note": "한방 안티에이징 라인의 대표 페어링, 활력·탄력 보강"
+          },
+          {
+            "ko": "영지버섯추출물",
+            "ja": "レイシエキス",
+            "en_inci": "Ganoderma Lucidum Extract",
+            "note": "같은 버섯 계열 면역·항산화 소재, 한방 라인에서 자주 함께 처방"
+          },
+          {
+            "ko": "녹용추출물",
+            "ja": "鹿茸エキス",
+            "en_inci": "Deer Antler Extract",
+            "note": "고급 한방 안티에이징 콘셉트(설화수·후 라인 등)에서 자주 결합"
+          },
+          {
+            "ko": "황금추출물",
+            "ja": "オウゴン根エキス",
+            "en_inci": "Scutellaria Baicalensis Root Extract",
+            "note": "진정·항산화 보강, 한방 진정·안티에이징 라인의 단골 페어"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "영지버섯추출물",
+            "ja": "レイシエキス",
+            "en_inci": "Ganoderma Lucidum Extract",
+            "note": "같은 약용버섯 계열, 면역·항산화 효능 유사, 일본 시장 인지도 더 높음"
+          },
+          {
+            "ko": "차가버섯추출물",
+            "ja": "チャーガエキス",
+            "en_inci": "Inonotus Obliquus Extract",
+            "note": "항산화력이 강한 버섯 추출물, 안티에이징·진정 대체 가능"
+          },
+          {
+            "ko": "베타글루칸",
+            "ja": "ベータ-グルカン",
+            "en_inci": "Beta-Glucan",
+            "note": "상황버섯의 핵심 활성 분획을 단독 정제한 소재, 진정·면역 효과를 안정적·저비용으로 구현 가능"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Phellinus Linteus Extract",
+          "status": "verified",
+          "source": "EU CosIng (REF 59205) + INCI Decoder",
+          "url": "https://ec.europa.eu/growth/tools-databases/cosing/details/59205",
+          "note": "CosIng 등록명 PHELLINUS LINTEUS EXTRACT (REF No 59205), 기능 skin conditioning. 정의: 'an extract of the mushroom, phellinus linteus, hymenochaetaceae'. INCI Decoder에서도 동일 표기 확인."
+        },
+        "ko": {
+          "official_name": "상황버섯추출물",
+          "status": "uncertain",
+          "source": "대한화장품협회(KCIA) 성분사전 / 식약처",
+          "url": "https://kcia.or.kr/cid/search/ingd_list.php",
+          "note": "KCIA 성분사전·식약처 의약품안전나라가 표준 출처지만, 페이지가 동적 검색이라 단건 직접 검증 실패. 한국 시장에서 '상황버섯추출물'은 통용되는 표기지만, KCIA 명명 위원회 자료(2024 4차)에서는 Phellinus 속을 '진흙버섯'으로 표준화한 사례가 확인되어 '진흙버섯추출물'이 표준화 명칭일 가능성도 있음. 정확한 단건 확정은 KCIA 사이트 직접 검색 필요."
+        },
+        "latin": {
+          "official_name": "Phellinus linteus",
+          "status": "verified",
+          "source": "GBIF / NCBI (Hymenochaetaceae) + Wikipedia (taxonomic note)",
+          "url": "https://www.gbif.org/species/8403967",
+          "note": "INCI 명명 기준의 source 학명은 Phellinus linteus (Berk. & M.A. Curtis) Teng로 유지됨. 단, 2015년 분자분류 재분류(Wu, Zhou & Dai)로 진짜 상황은 Sanghuangporus sanghuang (GBIF ID 7409216)으로 옮겨졌고, 종래 P. linteus 명칭의 일부는 Tropicoporus linteus로 분리됨. 화장품 INCI 표기는 여전히 'Phellinus linteus' 사용."
+        },
+        "ja": {
+          "official_name": "メシマコブエキス",
+          "status": "uncertain",
+          "source": "JCIA 化粧品の成分表示名称リスト (회원/PDF) — 보조: 일본 원료사 LS Corporation 자료",
+          "url": "https://www.jcia.org/user/business/ingredients/namelist",
+          "note": "여러 일본어 출처(원료 공급사·국내 화장품 데이터베이스 검색 스니펫)에서 표시명 'メシマコブエキス'(INCI: Phellinus Linteus Extract, 성분번호 559269)로 일관되게 나타나지만, 공식 1차 출처인 JCIA 성분표시명 리스트는 회원제·PDF 게재라 직접 검증 미완. cosmetic-info.jp(JCIA 미러)는 지역 차단으로 인용 보류. 표기 자체는 업계 통용으로 신뢰도 높으나 status는 보수적으로 uncertain."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-22T06:27:41.907Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::티트리잎오일": {
+      "input": "티트리잎오일",
+      "input_lang": "ko",
+      "category": "cosmetic",
+      "official": {
+        "ja": "ティーツリー葉油",
+        "en_inci": "Melaleuca Alternifolia (Tea Tree) Leaf Oil",
+        "latin": "Melaleuca alternifolia",
+        "ko": "티트리잎오일"
+      },
+      "variants": [
+        {
+          "form": "ティーツリーオイル",
+          "type": "INCI 음역 / 통칭",
+          "note": "일본 시장에서 가장 흔하게 사용되는 표기. 마케팅·제품명에서 통칭으로 자주 등장"
+        },
+        {
+          "form": "メラレウカアルテルニフォリア葉油",
+          "type": "INCI 음역 (학명 기반)",
+          "note": "전성분 표시에서 학명을 음역해 사용하는 경우. JCIA 사전 표기보다 길지만 정확함을 강조할 때"
+        },
+        {
+          "form": "ティートリー葉油",
+          "type": "장음 표기 변형",
+          "note": "'ティー' 대신 'ティー' 장음을 짧게 표기하는 경우. 일부 브랜드에서 사용"
+        },
+        {
+          "form": "茶樹油",
+          "type": "한자 표기",
+          "note": "중국·대만 영향 받은 표기. 일본에서는 거의 안 쓰지만 한방·아시아 컨셉 제품에 간혹 등장"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "ティトリー葉油",
+          "reason": "'ティー'의 장음 'ー'를 빠뜨린 오타. 정식 표기는 'ティーツリー'"
+        },
+        {
+          "form": "ティーツリーリーフオイル",
+          "reason": "영어 'Leaf Oil'을 그대로 카타카나 음역한 형태. JCIA 정식 표기는 '葉油' (한자)"
+        },
+        {
+          "form": "ティーツリー油",
+          "reason": "'葉'(잎)이 빠진 형태. 다른 부위(가지·줄기)에서 추출하는 경우와 구분이 안 됨"
+        },
+        {
+          "form": "ティーツリーエキス",
+          "reason": "오일(精油)과 엑기스(추출물)는 추출 방식·성분 프로필이 다름. 혼용 금지"
+        }
+      ],
+      "info": {
+        "type": "식물 추출물 (정유·에센셜 오일)",
+        "function_general": "항균·진정·여드름 케어·피지 조절",
+        "usage_areas": {
+          "skincare_overall": "일부 사용",
+          "skincare_detail": "여드름·트러블 케어 라인의 토너·세럼·스팟 트리트먼트·시트마스크에 집중. 시카 라인보다는 '아크네 케어'·'클리어'·'블레미시' 컨셉 라인",
+          "sunscreen": "거의 없음",
+          "cleansing": "사용 (여드름·트러블 케어 클렌저·페이셜 워시)",
+          "makeup_base": "거의 없음",
+          "color_makeup": "거의 없음",
+          "haircare": "사용 (두피 케어 샴푸·스칼프 토닉)",
+          "bodycare": "사용 (데오드란트·바디워시·풋케어)",
+          "food_use": "거의 없음 (정유는 식품 첨가물로 부적합)"
+        },
+        "common_effects": [
+          "여드름균 억제·항균",
+          "피부 진정·트러블 케어",
+          "피지 조절",
+          "두피 청결·비듬 케어",
+          "방취·데오드란트 효과"
+        ],
+        "estimated_ad_effects": [
+          "22. 肌荒れを防ぐ",
+          "23. 肌をひきしめる",
+          "24. 皮膚にうるおいを与える",
+          "32. 皮膚を清浄にする",
+          "47. ふけ、かゆみがおさえられる (헤어케어 적용 시)",
+          "48. ふけ、かゆみを防ぐ (헤어케어 적용 시)"
+        ],
+        "japan_recognition": "높음",
+        "japan_trend_note": "일본에서는 'ティーツリー'가 여드름·트러블 케어 컨셉의 대표 성분으로 인지도가 높음. 다만 한국에서 '시카(병풀)' 트렌드가 강한 것과 달리, 일본은 'ティーツリー'와 'サリチル酸(살리실산)'의 조합이 여드름 케어의 정석. 최근 무인양품(無印良品)·THE BODY SHOP·LUSH 등에서 꾸준히 사용되며, 'クリアケア'·'アクネケア' 라인의 핵심 성분으로 자리잡음"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "티트리잎수",
+            "ja": "ティーツリー葉水",
+            "en_inci": "Melaleuca Alternifolia (Tea Tree) Leaf Water",
+            "note": "티트리 정유의 수증기 증류 부산물(하이드로졸). 정유보다 자극이 약해 민감성 피부용 토너·미스트에 사용"
+          },
+          {
+            "ko": "티트리잎추출물",
+            "ja": "ティーツリー葉エキス",
+            "en_inci": "Melaleuca Alternifolia (Tea Tree) Leaf Extract",
+            "note": "용매 추출 방식으로 정유와 성분 프로필이 다름. 자극이 적고 수성 제형에 배합하기 쉬움"
+          },
+          {
+            "ko": "테르피넨-4-올",
+            "ja": "テルピネン-4-オール",
+            "en_inci": "Terpinen-4-ol",
+            "note": "티트리 오일의 핵심 활성 단일 성분. 항균력의 대부분을 담당하며, 표준화된 단일 분자로 안정성·재현성 높음"
+          },
+          {
+            "ko": "카유푸트오일",
+            "ja": "カユプテ油",
+            "en_inci": "Melaleuca Cajuputi Oil",
+            "note": "같은 멜라루카(Melaleuca)속 식물에서 추출. 티트리와 유사한 항균 효과지만 향과 성분이 다름"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "살리실산",
+            "ja": "サリチル酸",
+            "en_inci": "Salicylic Acid",
+            "note": "각질 제거 + 항균의 조합. 일본 여드름 케어 라인의 정석 페어링 (의약외품 유효성분)"
+          },
+          {
+            "ko": "나이아신아마이드",
+            "ja": "ナイアシンアミド",
+            "en_inci": "Niacinamide",
+            "note": "피지 조절·트러블 케어 라인에서 자주 함께. 미백·결 정돈 효능 보강"
+          },
+          {
+            "ko": "센텔라아시아티카추출물",
+            "ja": "ツボクサエキス",
+            "en_inci": "Centella Asiatica Extract",
+            "note": "항균(티트리) + 진정·재생(시카)의 조합. 트러블 후 진정 라인에 함께 배합"
+          },
+          {
+            "ko": "징크피씨에이",
+            "ja": "ピロリドンカルボン酸亜鉛",
+            "en_inci": "Zinc PCA",
+            "note": "피지 조절 + 항균의 조합. 지성·여드름성 피부용 토너·세럼에 함께 사용"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "유칼립투스잎오일",
+            "ja": "ユーカリ葉油",
+            "en_inci": "Eucalyptus Globulus Leaf Oil",
+            "note": "유사한 항균·청량감, 호흡기 케어에도 사용. 향이 더 강하고 자극도 높을 수 있음"
+          },
+          {
+            "ko": "로즈마리잎오일",
+            "ja": "ローズマリー葉油",
+            "en_inci": "Rosmarinus Officinalis (Rosemary) Leaf Oil",
+            "note": "항균·항산화 효과, 두피 케어에 특히 강점. 티트리보다 향이 부드러움"
+          },
+          {
+            "ko": "프로폴리스추출물",
+            "ja": "プロポリスエキス",
+            "en_inci": "Propolis Extract",
+            "note": "동물성(벌집) 유래 천연 항균 성분. 항균력 강하고 진정 효과도 우수, 비건 라인엔 부적합"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Melaleuca Alternifolia Leaf Oil",
+          "status": "verified",
+          "source": "EU CosIng / INCI Decoder / COSMILE Europe",
+          "url": "https://cosmileeurope.eu/inci/detail/8748/melaleuca-alternifolia-leaf-oil/",
+          "note": "CosIng REF No 40048, EC# 285-377-1, CAS 85085-48-9 / 8022-72-8 / 68647-73-4. SCCS 2025년 안전성 의견서에도 동일 명칭 사용."
+        },
+        "ko": {
+          "official_name": "티트리잎오일",
+          "status": "uncertain",
+          "source": "식약처 (직접 확인 못 함)",
+          "url": "https://nedrug.mfds.go.kr/pbp/CCBDG01",
+          "note": "nedrug.mfds.go.kr 화장품 원료성분 검색은 직접 조회 못 함. 업계 통용 표기는 '티트리잎오일'이며, 식약처 화장품 성분사전 명명 규칙(원물명+부위+추출형태)에도 부합. 다만 공식 페이지 검증은 미완."
+        },
+        "latin": {
+          "official_name": "Melaleuca alternifolia (Maiden & Betche) Cheel",
+          "status": "verified",
+          "source": "GBIF / Wikipedia (Myrtaceae)",
+          "url": "https://en.wikipedia.org/wiki/Melaleuca_alternifolia",
+          "note": "호주 동부 자생, Myrtaceae(도금양과). GBIF 등재명과 일치."
+        },
+        "ja": {
+          "official_name": "ティーツリー葉油",
+          "status": "verified",
+          "source": "일본 화장품 업계 통용 표기 (LUSH JP, iwaki-kk, recolor.jp 등 다수 자료에서 일치)",
+          "url": "https://www.lush.com/jp/ja/i/tea-tree-oil",
+          "note": "JCIA 공식 표시명 사전은 회원제로 직접 검증 불가했으나, 일본 화장품 다수 출처에서 'ティーツリー葉油' 표기가 일관됨. INCI 'Melaleuca Alternifolia (Tea Tree) Leaf Oil'에 대응하는 일본어 표시명."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-21T19:42:02.938Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::ヒアルロン酸na": {
+      "input": "ヒアルロン酸Na",
+      "input_lang": "ja",
+      "category": "cosmetic",
+      "official": {
+        "ja": "ヒアルロン酸Na",
+        "en_inci": "Sodium Hyaluronate",
+        "latin": null,
+        "ko": "히알루론산나트륨"
+      },
+      "variants": [
+        {
+          "form": "ヒアルロン酸ナトリウム",
+          "type": "전체 카타카나 표기",
+          "note": "성분표시명 사전에 따른 정식 풀네임 표기. 일부 브랜드가 친근감을 위해 풀네임을 그대로 사용"
+        },
+        {
+          "form": "加水分解ヒアルロン酸",
+          "type": "유도체 표기",
+          "note": "가수분해 처리한 저분자 히알루론산. 흡수력 강조 시 별도 성분명으로 함께 표기"
+        },
+        {
+          "form": "アセチルヒアルロン酸Na",
+          "type": "유도체 표기 (슈퍼히알루론산)",
+          "note": "흡수력·지속력 강조한 변형체. '슈퍼 히알루론산' 마케팅 명칭으로 자주 사용"
+        },
+        {
+          "form": "ヒアルロンサンナトリウム",
+          "type": "카타카나 변형",
+          "note": "일부 광고 카피에서 부드러운 어감을 위해 사용하나 정식 표기는 아님"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "ヒアロルン酸Na",
+          "reason": "'ロ'와 'ル' 순서가 바뀐 오타. 자주 발생하는 잘못된 표기"
+        },
+        {
+          "form": "ヒアルロン酸NA",
+          "reason": "'NA'는 대문자가 아닌 'Na'(나트륨 원소 기호)로 표기해야 정식. JCIA 표기 기준 위반"
+        },
+        {
+          "form": "ヒアルロン酸ソーダ",
+          "reason": "'ソーダ'(소다)는 구식·구어 표현. 현재 JCIA 표시명 사전 기준 아님"
+        },
+        {
+          "form": "ハイアルロン酸",
+          "reason": "영어 'Hyaluronic'을 직접 음역한 잘못된 표기. 일본 정식 표기는 'ヒアルロン'"
+        }
+      ],
+      "info": {
+        "type": "다당류 (생체 고분자)",
+        "function_general": "보습 (고분자 보습 성분의 대표격, 자기 무게의 약 6000배 수분 보유)",
+        "usage_areas": {
+          "skincare_overall": "전반 사용",
+          "skincare_detail": "토너·세럼·크림·마스크 시트·아이크림 등 거의 모든 스킨케어 제품군. 보습 라인의 기본 베이스 성분으로 사실상 필수",
+          "sunscreen": "사용 (보습 기능 강화용)",
+          "cleansing": "사용 (촉촉한 세정감 강조 시)",
+          "makeup_base": "사용 (BB·CC·쿠션·파운데이션의 보습 기능 강화)",
+          "color_makeup": "사용 (립스틱·립글로스·아이섀도우의 건조함 방지)",
+          "haircare": "사용 (샴푸·트리트먼트의 보습)",
+          "bodycare": "사용 (보디로션·핸드크림의 핵심 보습)",
+          "food_use": "사용 (관절·피부 미용 건기식 원료로 사용)"
+        },
+        "common_effects": [
+          "고보습 (자기 무게의 약 6000배 수분 보유)",
+          "피부 표면 수분막 형성",
+          "건조 방지·각질층 보습 유지",
+          "피부 유연성·탄력감 부여 (보습에 의한)"
+        ],
+        "estimated_ad_effects": [
+          "3. 肌を整える",
+          "4. 肌のキメを整える",
+          "19. 皮膚にうるおいを与える",
+          "20. 皮膚の水分・油分を補い保つ",
+          "21. 皮膚の柔軟性を保つ",
+          "23. 皮膚を保護する",
+          "24. 皮膚の乾燥を防ぐ"
+        ],
+        "japan_recognition": "매우 높음",
+        "japan_trend_note": "일본 시장에서 가장 인지도 높은 보습 성분 중 하나. 무인양품·하다라보(肌ラボ)·큐레르 등 대중 브랜드부터 고급 라인까지 광범위 사용. 최근에는 '저분자 히알루론산'·'슈퍼 히알루론산'·'3중 히알루론산' 등 차별화된 표기로 마케팅 전개. 시카(CICA) 트렌드 라인에서도 보습 베이스로 거의 필수"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)",
+        "화장품 효능 56개 가이드 (후생노동성 의약품등적정광고기준)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "가수분해히알루론산",
+            "ja": "加水分解ヒアルロン酸",
+            "en_inci": "Hydrolyzed Hyaluronic Acid",
+            "note": "저분자화한 히알루론산, 각질층 침투력 강화 (분자량 작아 피부 깊숙이 흡수)"
+          },
+          {
+            "ko": "아세틸히알루론산나트륨",
+            "ja": "アセチルヒアルロン酸Na",
+            "en_inci": "Sodium Acetylated Hyaluronate",
+            "note": "슈퍼 히알루론산. 일반 히알루론산보다 약 2배 수분 보유력, 피부 친화성 강화"
+          },
+          {
+            "ko": "히알루론산크로스폴리머나트륨",
+            "ja": "ヒアルロン酸クロスポリマーNa",
+            "en_inci": "Sodium Hyaluronate Crosspolymer",
+            "note": "가교 결합 히알루론산, 피부 표면에 막 형성하여 지속 보습"
+          },
+          {
+            "ko": "히드록시프로필트리모늄히알루론산",
+            "ja": "ヒドロキシプロピルトリモニウムヒアルロン酸",
+            "en_inci": "Hydroxypropyltrimonium Hyaluronate",
+            "note": "양이온화 히알루론산, 헤어케어·피부 표면 흡착력 강화 변형체"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "세라마이드NP",
+            "ja": "セラミドNP",
+            "en_inci": "Ceramide NP",
+            "note": "보습 + 장벽 강화 보강, 보습 라인·민감 피부 라인에 자주 함께 (수분 채우기 + 가두기 콤보)"
+          },
+          {
+            "ko": "글리세린",
+            "ja": "グリセリン",
+            "en_inci": "Glycerin",
+            "note": "저분자 보습제와 고분자 히알루론산 페어링, 거의 모든 보습 제품의 기본 콤비"
+          },
+          {
+            "ko": "베타인",
+            "ja": "ベタイン",
+            "en_inci": "Betaine",
+            "note": "천연 보습 성분, 히알루론산과 함께 다층 보습 콘셉트에 자주 사용"
+          },
+          {
+            "ko": "판테놀",
+            "ja": "パンテノール",
+            "en_inci": "Panthenol",
+            "note": "보습 + 진정 보강, 시카 라인·민감 피부 라인에서 자주 페어링"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "트레할로스",
+            "ja": "トレハロース",
+            "en_inci": "Trehalose",
+            "note": "저분자 보습 다당류, 보습력 우수 + 안정성 높음 (가격↓)"
+          },
+          {
+            "ko": "폴리쿼터늄-51",
+            "ja": "ポリクオタニウム-51",
+            "en_inci": "Polyquaternium-51",
+            "note": "리피듀어(Lipidure). 인공 인지질 유사 보습제, 히알루론산 대비 2배 보습력 주장 (고급 라인에서 대체)"
+          },
+          {
+            "ko": "프로테오글리칸",
+            "ja": "プロテオグリカン",
+            "en_inci": "Proteoglycan",
+            "note": "연어 유래 보습 성분, 히알루론산 대비 약 1.3배 보습력 주장 + 탄력 보강 효과"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Sodium Hyaluronate",
+          "status": "verified",
+          "source": "EU CosIng",
+          "url": "https://ec.europa.eu/growth/tools-databases/cosing/",
+          "note": "CosIng 등록번호 #79556. CAS 9067-32-7. 기능: Humectant, Skin Conditioning. EU에서 제한 없이 사용 허가."
+        },
+        "ko": {
+          "official_name": "히알루론산나트륨",
+          "status": "verified",
+          "source": "식약처 (MFDS) 화장품 원료성분정보",
+          "url": "https://nedrug.mfds.go.kr/pbp/CCBDF01",
+          "note": "식약처 화장품 원료성분 공공데이터에 표준명으로 등재. 영문명 Sodium Hyaluronate."
+        },
+        "latin": {
+          "official_name": null,
+          "status": "not_applicable",
+          "source": null,
+          "url": null,
+          "note": "히알루론산은 생물공학(미생물 발효) 또는 화학 합성으로 생산되는 다당류의 나트륨염. 단일 식물/동물 종에서 유래한 성분이 아니므로 학명 적용 대상이 아님."
+        },
+        "ja": {
+          "official_name": "ヒアルロン酸Na",
+          "status": "verified",
+          "source": "JCIA 化粧品の成分表示名称リスト",
+          "url": "https://www.jcia.org/user/business/ingredients/namelist",
+          "note": "日本化粧品工業会(JCIA) 발행 「化粧品の成分表示名称リスト」 등재. 제조법·グルクロン酸 함량과 무관하게 모두 「ヒアルロン酸Na」로 표시. INCI명 Sodium Hyaluronate."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-21T19:28:40.553Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::pdrn": {
+      "input": "PDRN",
+      "input_lang": "en",
+      "category": "cosmetic",
+      "official": {
+        "ja": "ポリデオキシリボヌクレオチド",
+        "en_inci": "Polydeoxyribonucleotide",
+        "latin": null,
+        "ko": "폴리데옥시리보뉴클레오타이드"
+      },
+      "variants": [
+        {
+          "form": "PDRN",
+          "type": "영문 약어",
+          "note": "일본 시장에서도 한국 K-뷰티·연어주사 트렌드와 함께 'PDRN'이라는 약어 그대로 표기되는 경우가 많음"
+        },
+        {
+          "form": "サーモン注射成分",
+          "type": "별칭·마케팅 표현",
+          "note": "연어 정소에서 추출한다는 점을 강조한 마케팅 표현. 일본 미용 의료 광고에서 자주 사용"
+        },
+        {
+          "form": "ポリヌクレオチド",
+          "type": "상위 개념 표기",
+          "note": "PN(폴리뉴클레오타이드)과 혼용되는 경우. 엄밀하게는 다른 성분이지만 일본 시장에서 혼동 표기됨"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "ポリデオキシリボヌクレオタイド",
+          "reason": "한국어 '뉴클레오타이드' 발음 그대로 옮긴 잘못된 카타카나. 일본어 정식은 'ヌクレオチド'"
+        },
+        {
+          "form": "ピーディーアールエヌ",
+          "reason": "알파벳 약어를 가타카나로 풀어쓴 비공식 표기. JCIA 사전에는 등재되지 않음"
+        },
+        {
+          "form": "ポリデキシリボヌクレオチド",
+          "reason": "'デオキシ' 누락 오타. 정식은 'デオキシリボ'"
+        }
+      ],
+      "info": {
+        "type": "생체 고분자 (DNA 단편·올리고뉴클레오타이드)",
+        "function_general": "피부 재생·진정·보습·항노화 (조직 재생 보조)",
+        "usage_areas": {
+          "skincare_overall": "일부 사용 (의료·메디컬 코스메틱 중심, 일반 화장품에서는 제한적)",
+          "skincare_detail": "앰플·고기능 세럼·재생 크림·시트마스크. 최근 '연어주사 화장품화' 콘셉트로 리프팅·재생 라인에 사용. 의료기관·클리닉 브랜드 라인에 집중",
+          "sunscreen": "거의 없음",
+          "cleansing": "거의 없음",
+          "makeup_base": "거의 없음",
+          "color_makeup": "거의 없음",
+          "haircare": "거의 없음 (두피 재생 콘셉트 일부)",
+          "bodycare": "거의 없음",
+          "food_use": "거의 없음 (의약품·의료 시술 영역이 중심)"
+        },
+        "common_effects": [
+          "피부 재생 촉진",
+          "진정·항염",
+          "보습",
+          "조직 회복 보조",
+          "피부결 개선"
+        ],
+        "estimated_ad_effects": [
+          "22. 肌荒れを防ぐ",
+          "23. 肌をひきしめる",
+          "31. 皮膚にうるおいを与える",
+          "32. 皮膚の水分、油分を補い保つ",
+          "33. 皮膚の柔軟性を保つ",
+          "34. 皮膚を保護する",
+          "35. 皮膚の乾燥を防ぐ",
+          "36. 肌を整える",
+          "37. 肌のキメを整える",
+          "41. 肌をなめらかにする"
+        ],
+        "japan_recognition": "보통",
+        "japan_trend_note": "일본에서는 화장품보다 미용 의료 시술(연어주사·리쥬란 류)로 더 잘 알려져 있음. 최근 K-뷰티 영향으로 PDRN 함유 화장품(특히 리쥬란 코스메틱·연어 PDRN 앰플)이 일본 큐텐·아마존JP에서 인기 상승 중. 다만 화장품 광고에서는 '재생'·'주사 효과' 같은 약기법 위반 표현이 빈번해 주의 필요"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "폴리뉴클레오타이드",
+            "ja": "ポリヌクレオチド",
+            "en_inci": "Polynucleotide",
+            "note": "PDRN의 상위 개념. 분자량이 더 크고 안정성·지속성이 높아 PN 주사로 차세대 연어주사로 분류"
+          },
+          {
+            "ko": "소듐 디엔에이",
+            "ja": "DNA-Na / デオキシリボ核酸ナトリウム",
+            "en_inci": "Sodium DNA",
+            "note": "연어 정소 유래 DNA 염. PDRN보다 분자량이 크고 보습·필름 형성 기능 중심"
+          },
+          {
+            "ko": "아데노신",
+            "ja": "アデノシン",
+            "en_inci": "Adenosine",
+            "note": "뉴클레오시드 단량체. 일본 후생노동성 주름개선 유효성분으로 인정 (의약외품). PDRN 가수분해 산물의 일부"
+          },
+          {
+            "ko": "하이드롤라이즈드 디엔에이",
+            "ja": "加水分解DNA",
+            "en_inci": "Hydrolyzed DNA",
+            "note": "DNA를 효소 가수분해한 형태. 저분자화로 흡수성 강화, PDRN 유사 콘셉트로 활용"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "엑소좀",
+            "ja": "エクソソーム",
+            "en_inci": "(다양, 줄기세포 유래 등)",
+            "note": "재생·리프팅 메디컬 코스메틱 라인에서 PDRN과 함께 시너지 콘셉트로 페어링"
+          },
+          {
+            "ko": "센텔라아시아티카추출물",
+            "ja": "ツボクサエキス",
+            "en_inci": "Centella Asiatica Extract",
+            "note": "재생·진정 라인에서 시카+PDRN 콘셉트로 자주 결합"
+          },
+          {
+            "ko": "나이아신아마이드",
+            "ja": "ナイアシンアミド",
+            "en_inci": "Niacinamide",
+            "note": "피부결 개선·미백 보강용으로 PDRN 앰플에 자주 동반 (의약외품 유효성분)"
+          },
+          {
+            "ko": "히알루론산",
+            "ja": "ヒアルロン酸Na",
+            "en_inci": "Sodium Hyaluronate",
+            "note": "보습 베이스로 PDRN 고기능 세럼에 거의 필수적으로 함께 배합"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "폴리뉴클레오타이드",
+            "ja": "ポリヌクレオチド",
+            "en_inci": "Polynucleotide",
+            "note": "동일 계열 차세대 성분. 분자량↑·지속성↑, PDRN보다 고가지만 트렌드 우위"
+          },
+          {
+            "ko": "성장인자(EGF)",
+            "ja": "sh-Oligopeptide-1",
+            "en_inci": "sh-Oligopeptide-1",
+            "note": "재생·항노화 대체. 펩타이드 계열, 효과 직접적이나 안정성 처방 난이도 높음"
+          },
+          {
+            "ko": "베타글루칸",
+            "ja": "β-グルカン",
+            "en_inci": "Beta-Glucan",
+            "note": "재생·진정 대체. 식물·효모 유래, 안정성·가격 우위. 광고 표현 리스크 낮음"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Sodium DNA",
+          "status": "verified",
+          "source": "EU CosIng + INCI Decoder",
+          "url": "https://ec.europa.eu/growth/tools-databases/cosing/details/94968",
+          "note": "PDRN(Polydeoxyribonucleotide)의 화장품 INCI 표기는 'Sodium DNA'. EU CosIng 항목 94968은 'SODIUM DNA/RNA'(혼합형)도 등재. 화장품 라벨에는 'PDRN'이 아니라 'Sodium DNA'로 표시되는 것이 원칙."
+        },
+        "ko": {
+          "official_name": "소듐디엔에이",
+          "status": "verified",
+          "source": "대한화장품협회 성분사전 (KCIA)",
+          "url": "https://kcia.or.kr/cid/search/ingd_view.php?no=1048",
+          "note": "식약처 위탁 운영 KCIA 성분사전의 표시명. 영문명 Sodium DNA, 배합목적은 피부컨디셔닝제. 의약품/시술용 PDRN과 달리 화장품 성분으로는 이 명칭으로 표기."
+        },
+        "latin": {
+          "official_name": null,
+          "status": "not_applicable",
+          "source": null,
+          "url": null,
+          "note": "PDRN은 합성/생물추출 성분(연어·송어 정소 DNA 분획 또는 식물성·재조합 유래). INCI 표기 자체는 학명을 포함하지 않음. 식물 추출물이 아니므로 학명 N/A."
+        },
+        "ja": {
+          "official_name": "DNA-Na",
+          "status": "uncertain",
+          "source": "iwasedatabase.jp 화장품 표시명 DB (검색 결과 기반)",
+          "url": "https://www.iwasedatabase.jp/s/cosmetic-display/a1M2u000000M0LzEAK/dnana?language=ja",
+          "note": "JCIA 표시명 'DNA-Na'(英: Sodium DNA)로 등재된 것으로 확인됨. 단 iwasedatabase 직접 페이지 접근 시 HTTP 403, cosmetic-info.jp는 GeoIP 차단으로 직접 검증 불가. JCIA 공식 사전은 회원제. 일본 시장 화장품 라벨에서는 'DNA-Na' 또는 카타카나 'ポリデオキシリボヌクレオチド'(PDRN)는 일반명/마케팅명이며, 전성분 표시는 'DNA-Na'가 표준."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-22T10:15:39.197Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::hydrolyzed sodium hyaluronate": {
+      "input": "Hydrolyzed Sodium Hyaluronate",
+      "input_lang": "en",
+      "category": "cosmetic",
+      "official": {
+        "ja": "加水分解ヒアルロン酸Na",
+        "en_inci": "Hydrolyzed Sodium Hyaluronate",
+        "latin": null,
+        "ko": "가수분해히알루론산나트륨"
+      },
+      "variants": [
+        {
+          "form": "加水分解ヒアルロン酸ナトリウム",
+          "type": "풀네임 카타카나 표기",
+          "note": "전성분 표기에서 Na를 'ナトリウム'로 풀어 쓰는 경우. 일부 브랜드·MCN 자료에서 가독성 위해 사용"
+        },
+        {
+          "form": "加水分解HA-Na",
+          "type": "약칭 혼합",
+          "note": "마케팅 자료·LP에서 짧게 표기. 전성분 라벨에는 사용 불가, 광고·블로그용"
+        },
+        {
+          "form": "低分子ヒアルロン酸Na",
+          "type": "별칭 (마케팅명)",
+          "note": "가수분해로 저분자화한 점을 강조한 마케팅 표현. 전성분 정식 표기는 아니지만 일본 시장에서 광고 카피로 매우 자주 등장"
+        },
+        {
+          "form": "加水分解ヒアルロン酸",
+          "type": "Na 누락형",
+          "note": "나트륨염 형태가 아닌 산 형태(加水分解ヒアルロン酸) 별도 등재 성분. 'Na'가 붙느냐 안 붙느냐로 다른 성분이므로 주의"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "加水分解ヒアルロン酸NA",
+          "reason": "'Na'는 소문자 a가 정식. 'NA' 대문자는 JCIA 표기 위반"
+        },
+        {
+          "form": "加水分解ヒアロルン酸Na",
+          "reason": "'ヒアロルン'은 오타. 정식은 'ヒアルロン'(히아루론)"
+        },
+        {
+          "form": "加水ヒアルロン酸Na",
+          "reason": "'加水分解'를 '加水'로 줄이면 의미가 달라짐 (가수분해 ≠ 가수). 정식 명칭 위반"
+        },
+        {
+          "form": "ハイドロライズドヒアルロン酸Na",
+          "reason": "영어 INCI를 그대로 음역한 형태. 일본은 한자+카타카나 혼합 표기(加水分解+ヒアルロン酸)가 정식. 음역형은 전성분 표기로 부적합"
+        }
+      ],
+      "info": {
+        "type": "합성·발효 유래 다당류 유도체 (히알루론산 나트륨염을 효소·산 가수분해로 저분자화)",
+        "function_general": "보습 (저분자라 각질층 침투력↑) · 피부 컨디셔닝",
+        "usage_areas": {
+          "skincare_overall": "전반 사용",
+          "skincare_detail": "토너·세럼·앰플·크림·시트마스크 거의 전 카테고리. 특히 '深層保湿(심층 보습)'·'潤い浸透' 컨셉의 고기능 세럼·앰플에 핵심. 多重ヒアルロン酸(다중 히알루론산 3종·5종·7종) 처방의 필수 구성원",
+          "sunscreen": "사용 (보습·사용감 개선)",
+          "cleansing": "사용 (보습형 클렌징 오일·폼)",
+          "makeup_base": "사용 (수분 베이스·쿠션 파운데이션)",
+          "color_makeup": "사용 (보습형 립·립밤·립글로스)",
+          "haircare": "사용 (헤어 트리트먼트·아웃배스, 모발 내부 보습)",
+          "bodycare": "사용 (바디로션·핸드크림)",
+          "food_use": "거의 없음 (가수분해 히알루론산 자체는 건기식 원료로 별도 사용되나, 'Na염 가수분해형'은 화장품 원료가 일반적)"
+        },
+        "common_effects": [
+          "저분자화로 각질층 침투력 향상",
+          "즉각적 수분 공급 및 보습막 형성",
+          "피부 유연성 개선",
+          "건조로 인한 잔주름 완화 (보습 한정)"
+        ],
+        "estimated_ad_effects": [
+          "3. 肌を整える",
+          "4. 肌のキメを整える",
+          "16. 皮膚にうるおいを与える",
+          "17. 皮膚の水分、油分を補い保つ",
+          "18. 皮膚の柔軟性を保つ",
+          "19. 皮膚を保護する",
+          "20. 皮膚の乾燥を防ぐ",
+          "47. 乾燥による小ジワを目立たなくする (※効能評価試験済みの場合のみ)"
+        ],
+        "japan_recognition": "매우 높음",
+        "japan_trend_note": "일본 시장에서 히알루론산은 보습 성분의 '대명사'. 가수분해(저분자)형은 '浸透型ヒアルロン酸'·'ナノヒアルロン酸'와 함께 '深部までうるおう' 컨셉의 핵심. 최근 트렌드는 多重ヒアルロン酸(分子量別 3~7종 복합 처방)으로, 가수분해형은 그 중 '저분자·침투' 포지션 담당. 시세이도·코세·DECENCIA 등 메이저 브랜드 보습 라인 거의 전 제품에 등장"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)",
+        "후생노동성「化粧品の効能の範囲」(56개 효능 매칭)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "히알루론산나트륨",
+            "ja": "ヒアルロン酸Na",
+            "en_inci": "Sodium Hyaluronate",
+            "note": "모분자. 고분자 상태로 피부 표면 보습막 형성, 가수분해형은 이것의 저분자화 버전"
+          },
+          {
+            "ko": "히알루론산",
+            "ja": "ヒアルロン酸",
+            "en_inci": "Hyaluronic Acid",
+            "note": "산 형태 (염이 아닌 원형). Na염보다 사용 빈도 낮음, 안정성·수용성에서 Na염이 유리"
+          },
+          {
+            "ko": "아세틸히알루론산나트륨",
+            "ja": "アセチル化ヒアルロン酸Na",
+            "en_inci": "Sodium Acetylated Hyaluronate",
+            "note": "아세틸기 도입한 '슈퍼 히알루론산'. 피부 친화력·지속력 향상, 고가 앰플에 주로 사용"
+          },
+          {
+            "ko": "히알루론산크로스폴리머나트륨",
+            "ja": "ヒアルロン酸クロスポリマーNa",
+            "en_inci": "Sodium Hyaluronate Crosspolymer",
+            "note": "가교결합형. 피부 표면에 메쉬 구조 형성, 장시간 보습 지속·탄력감 부여"
+          },
+          {
+            "ko": "가수분해히알루론산",
+            "ja": "加水分解ヒアルロン酸",
+            "en_inci": "Hydrolyzed Hyaluronic Acid",
+            "note": "Na 없는 산 형태 저분자 히알루론산. 본 성분과 거의 동일 기능, 처방 pH에 따라 선택"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "세라마이드NP",
+            "ja": "セラミドNP",
+            "en_inci": "Ceramide NP",
+            "note": "보습+장벽 강화 골든 조합. 히알루론산이 수분 공급, 세라마이드가 수분 유지 (다층 보습 라인 필수)"
+          },
+          {
+            "ko": "베타글루칸",
+            "ja": "β-グルカン",
+            "en_inci": "Beta-Glucan",
+            "note": "보습+진정 페어링. 둘 다 고분자 보습 성분으로 시너지, 시카·민감성 라인에 자주 함께"
+          },
+          {
+            "ko": "판테놀",
+            "ja": "パンテノール",
+            "en_inci": "Panthenol",
+            "note": "보습+피부 컨디셔닝. 수분 공급과 피부 회복 보강, 토너·시트마스크 필수 페어링"
+          },
+          {
+            "ko": "나이아신아마이드",
+            "ja": "ナイアシンアミド",
+            "en_inci": "Niacinamide",
+            "note": "보습+장벽·미백·항노화 만능 페어링. 최근 일본 멀티 기능 세럼에서 거의 표준 조합"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "폴리글루타민산나트륨",
+            "ja": "ポリグルタミン酸",
+            "en_inci": "Sodium Polyglutamate",
+            "note": "히알루론산보다 보습력 약 4~5배. 낫토 유래 발효 성분, 일본 시장 친화도 높음 (와후 컨셉)"
+          },
+          {
+            "ko": "트레할로스",
+            "ja": "トレハロース",
+            "en_inci": "Trehalose",
+            "note": "천연 당류 보습제. 가격↓·안정성↑, 처방 비용 절감용 대체로 사용 가능 (보습력은 히알루론산이 우위)"
+          },
+          {
+            "ko": "슈크로스",
+            "ja": "加水分解ヒアルロン酸 + プロテオグリカン",
+            "en_inci": "Proteoglycan",
+            "note": "연어 비강연골 유래. 히알루론산 + 콜라겐 복합 성격, 고가 안티에이징 라인 대체용"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Hydrolyzed Sodium Hyaluronate",
+          "status": "verified",
+          "source": "EU CosIng",
+          "url": "https://ec.europa.eu/growth/tools-databases/cosing/details/87175",
+          "note": "CosIng ID 87175로 공식 등재 확인. 표준 INCI 표기는 대문자 'HYDROLYZED SODIUM HYALURONATE'이며 일반 표기 시 'Hydrolyzed Sodium Hyaluronate'."
+        },
+        "ko": {
+          "official_name": "하이드롤라이즈드소듐하이알루로네이트",
+          "status": "verified",
+          "source": "대한화장품협회 성분명 표준화 위원회 (식약처 연동)",
+          "url": "https://kcia.or.kr/cid/about/intro_01.php",
+          "note": "한국 화장품 성분 표준 명칭은 INCI를 한글로 음역하는 방식이며, 다수의 국내 성분 DB(폴라초이스, 쿠스, 닥터오라클 등)에서 동일 표기 확인. 식약처 nedrug.mfds.go.kr 개별 페이지는 직접 매칭 못 했지만 표준화 명칭 규칙상 일치."
+        },
+        "latin": {
+          "official_name": null,
+          "status": "not_applicable",
+          "source": "N/A",
+          "url": null,
+          "note": "히알루론산나트륨을 효소·산 등으로 가수분해한 합성/바이오 가공 성분으로, 단일 식물 학명이 존재하지 않음."
+        },
+        "ja": {
+          "official_name": "加水分解ヒアルロン酸Na",
+          "status": "verified",
+          "source": "JCIA 化粧品成分表示名称リスト (iwasedatabase 교차 확인)",
+          "url": "https://www.jcia.org/user/business/ingredients/namelist",
+          "note": "JCIA 공식 명칭 리스트(16,908개 성분)에 등재. iwasedatabase.jp 화장품표시명 DB에서도 동일 표기 확인. JCIA 사이트는 검색 인터페이스만 노출되어 개별 상세 fetch 불가하지만, 표시 규칙(소듐=Na 약기) 및 다중 출처 일치로 verified 판정. cosmetic-info.jp는 접근 불가로 인용 제외."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-21T20:12:48.211Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    },
+    "cosmetic::acrylates/c10-30 alkyl acrylate crosspolymer": {
+      "input": "Acrylates/C10-30 Alkyl Acrylate Crosspolymer",
+      "input_lang": "en",
+      "category": "cosmetic",
+      "official": {
+        "ja": "(アクリレーツ/アクリル酸アルキル(C10-30))クロスポリマー",
+        "en_inci": "Acrylates/C10-30 Alkyl Acrylate Crosspolymer",
+        "latin": null,
+        "ko": "아크릴레이트/C10-30 알킬 아크릴레이트 크로스폴리머"
+      },
+      "variants": [
+        {
+          "form": "カルボマー系コポリマー",
+          "type": "별칭",
+          "note": "카보머 계열의 가교 코폴리머로 묶어 부르는 통칭. 원료사 카탈로그(Lubrizol Pemulen TR-1/TR-2 등) 설명에서 자주 등장"
+        },
+        {
+          "form": "Pemulen TR-1 / Pemulen TR-2",
+          "type": "원료사 상품명",
+          "note": "Lubrizol사 대표 그레이드. 제형 개발자·처방서에서 INCI 대신 상품명으로 통용"
+        },
+        {
+          "form": "(アクリレーツ・アクリル酸アルキル(C10-30))クロスポリマー",
+          "type": "INCI 음역 변형",
+          "note": "슬래시(/) 대신 가운뎃점(・)으로 연결한 표기. 일부 일본 브랜드 전성분 라벨에서 사용"
+        }
+      ],
+      "ng_forms": [
+        {
+          "form": "アクリレートC10-30アルキルアクリレートクロスポリマー",
+          "reason": "JCIA 정식 표기는 '아크릴레이츠(複数形, ーツ)'이며 '/'·괄호로 두 모노머를 명확히 구분해야 함. 'アクリレート(단수)'로 적으면 다른 성분(예: Acrylates Copolymer)과 혼동"
+        },
+        {
+          "form": "アクリル酸アルキル(C10-30)クロスポリマー",
+          "reason": "앞쪽 'Acrylates' 부분이 누락된 표기. 두 모노머 중 하나만 적은 형태로 INCI 정합성 미달"
+        },
+        {
+          "form": "アクリレーツ/C10-30アルキルアクリレートクロスポリマー",
+          "reason": "INCI를 카타카나로 그대로 음역한 형태. JCIA는 뒤쪽을 'アクリル酸アルキル(C10-30)'로 일본어화하는 것이 정식"
+        }
+      ],
+      "info": {
+        "type": "합성 고분자 (가교 아크릴 코폴리머)",
+        "function_general": "점증제·유화안정제 (제형 보조 — 효능 성분이 아닌 기제(基剤))",
+        "usage_areas": {
+          "skincare_overall": "전반 사용",
+          "skincare_detail": "젤·에센스·로션·크림·마스크 전반. 특히 저점도의 투명·반투명 젤 텍스처와 O/W 에멀젼 안정화에 광범위 사용. 시카·수분·앰플 라인 텍스처 구현의 핵심 점증제",
+          "sunscreen": "사용 (자외선차단제 에멀젼 안정화·발림성 개선)",
+          "cleansing": "사용 (워시오프 젤·클렌징 젤의 점증)",
+          "makeup_base": "사용 (BB·CC·파운데이션의 수상 점증·유화 안정)",
+          "color_makeup": "일부 사용 (립글로스·아이라이너 등 일부 수계 처방)",
+          "haircare": "사용 (스타일링 젤·헤어 트리트먼트 점증)",
+          "bodycare": "사용 (바디 로션·젤)",
+          "food_use": "거의 없음"
+        },
+        "common_effects": [
+          "수상 점증 (점도 부여로 사용감 조절)",
+          "O/W 에멀젼 안정화 (소량 오일을 계면활성제 최소량으로 유화)",
+          "텍스처 형성 (투명 젤·맑은 에센스 구현)",
+          "유효성분 분산 안정 유지",
+          "끈적임 적은 발림성 부여"
+        ],
+        "estimated_ad_effects": [],
+        "japan_recognition": "낮음 (소비자 인지) / 처방가·개발자에게는 매우 높음",
+        "japan_trend_note": "기제 성분이라 소비자 마케팅 전면에 노출되는 일은 드묾. 다만 透明ジェル·とろみ·みずみずしい 텍스처를 강조하는 일본 시장 트렌드(시카·수분·앰플 라인)에서 사실상 표준 점증제로 채택. 일본 신제품 처방서·OEM 카탈로그에서 Pemulen TR-1/TR-2 그레이드명으로 빈출"
+      },
+      "sources_claim": [
+        "JCIA 化粧品成分表示名称辞典 (정식 표기 추정)",
+        "EU CosIng (INCI 매칭 추정)",
+        "한국 식약처 화장품 성분 사전 (한국 표기 추정)",
+        "Lubrizol Pemulen TR-1/TR-2 기술자료 (그레이드·기능 추정)"
+      ],
+      "related_ingredients": {
+        "derivatives": [
+          {
+            "ko": "카보머",
+            "ja": "カルボマー",
+            "en_inci": "Carbomer",
+            "note": "같은 아크릴산계 가교 폴리머의 모(母) 분자. 점증력↑ 그러나 유화력 없음 — 본 성분은 카보머에 C10-30 알킬 사슬을 더해 유화 기능을 부여한 변형체"
+          },
+          {
+            "ko": "아크릴레이트/C10-30 알킬 아크릴레이트 크로스폴리머 (Pemulen TR-2)",
+            "ja": "(アクリレーツ/アクリル酸アルキル(C10-30))クロスポリマー (TR-2)",
+            "en_inci": "Acrylates/C10-30 Alkyl Acrylate Crosspolymer (Pemulen TR-2)",
+            "note": "동일 INCI의 다른 그레이드. TR-1은 친수성↑·고오일 처방에, TR-2는 친유성↑·저오일 가벼운 텍스처에 적합"
+          },
+          {
+            "ko": "아크릴레이트 코폴리머",
+            "ja": "アクリレーツコポリマー",
+            "en_inci": "Acrylates Copolymer",
+            "note": "가교(crosspolymer)되지 않은 선형 코폴리머. 필름형성·점증 보조용. 본 성분과 달리 유화 기능은 약함"
+          },
+          {
+            "ko": "아크릴레이트/비닐 이소데카노에이트 크로스폴리머",
+            "ja": "(アクリレーツ/イソデカン酸ビニル)クロスポリマー",
+            "en_inci": "Acrylates/Vinyl Isodecanoate Crosspolymer",
+            "note": "유사한 자가유화형 가교 폴리머. 알킬 사슬을 비닐 에스터로 바꾼 변형체로 더 가벼운 사용감"
+          }
+        ],
+        "pairings": [
+          {
+            "ko": "글리세린",
+            "ja": "グリセリン",
+            "en_inci": "Glycerin",
+            "note": "보습+점증 콤보. 본 성분이 형성하는 젤 매트릭스에 보습력을 부여하는 일본 수분 라인의 기본 페어링"
+          },
+          {
+            "ko": "수산화나트륨 / 트로메타민",
+            "ja": "水酸化Na / トロメタミン",
+            "en_inci": "Sodium Hydroxide / Tromethamine",
+            "note": "본 성분은 중화제로 pH 5~7에서 점증이 발현됨. 처방상 반드시 함께 들어가는 짝"
+          },
+          {
+            "ko": "잔탄검",
+            "ja": "キサンタンガム",
+            "en_inci": "Xanthan Gum",
+            "note": "투명도·점성 곡선 보강 페어링. 본 성분의 매끄러운 발림성에 잔탄검의 안정성을 더해 시카·앰플 젤에 다용"
+          },
+          {
+            "ko": "병풀추출물 (마데카소사이드 등)",
+            "ja": "ツボクサエキス",
+            "en_inci": "Centella Asiatica Extract",
+            "note": "시카 라인의 활성 성분과 본 성분의 투명 젤 텍스처는 일본 시카 카테고리의 표준 조합"
+          }
+        ],
+        "alternatives": [
+          {
+            "ko": "잔탄검",
+            "ja": "キサンタンガム",
+            "en_inci": "Xanthan Gum",
+            "note": "천연 유래 점증제로 클린뷰티 라인에서 대체. 투명도·매끄러움은 떨어지지만 안정성·자연주의 어필↑"
+          },
+          {
+            "ko": "소듐폴리아크릴레이트",
+            "ja": "ポリアクリル酸Na",
+            "en_inci": "Sodium Polyacrylate",
+            "note": "선중화형 합성 점증제. pH 조정 없이 즉시 점증 가능 — 처방 간소화에 유리하나 유화 기능은 약함"
+          },
+          {
+            "ko": "하이드록시에틸 아크릴레이트/소듐 아크릴로일디메틸 타우레이트 코폴리머",
+            "ja": "(ヒドロキシエチルアクリレート/アクリロイルジメチルタウリンNa)コポリマー",
+            "en_inci": "Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer",
+            "note": "선중화·자가유화형 합성 점증제(Sepinov EMT 10 등). 본 성분 대비 콜드프로세스 가능·전해질 내성↑로 최근 일본 신제품에서 대체 채택 증가"
+          }
+        ]
+      },
+      "verified": true,
+      "verification": {
+        "en_inci": {
+          "official_name": "Acrylates/C10-30 Alkyl Acrylate Crosspolymer",
+          "status": "verified",
+          "source": "EU CosIng / COSMILE Europe / INCI Decoder",
+          "url": "https://cosmileeurope.eu/inci/detail/377/acrylates-c10-30-alkyl-acrylate-crosspolymer/",
+          "note": "EU CosIng REF No: 74162, CAS 176429-87-1. INCI 표기는 'Acrylates/C10-30 Alkyl Acrylate Crosspolymer'로 슬래시 구분, 입력 표기와 정확히 일치."
+        },
+        "ko": {
+          "official_name": "아크릴레이트/C10-30알킬아크릴레이트크로스폴리머",
+          "status": "verified",
+          "source": "대한화장품협회(KCIA) 성분사전 / 식약처 화장품 성분명 표준",
+          "url": "http://kcia.or.kr/cid/search/ingd_view.php?no=1778",
+          "note": "KCIA 성분사전(no.1778) 등재. 식약처 화장품 성분명 고시 기준 표기로, 슬래시(/) 구분 후 띄어쓰기 없이 한 단어로 붙여 씀."
+        },
+        "latin": {
+          "official_name": null,
+          "status": "not_applicable",
+          "source": "N/A",
+          "url": null,
+          "note": "합성 고분자(아크릴레이트 가교 중합체)로, 식물·동물 유래가 아니라 학명 해당 없음."
+        },
+        "ja": {
+          "official_name": "(アクリレーツ／アクリル酸アルキル(C10-30))クロスポリマー",
+          "status": "uncertain",
+          "source": "복수 일본 화장품 성분 데이터베이스 (cosmetic-ingredients.org, nahls.co.jp, ishampoo.jp 등)",
+          "url": "https://cosmetic-ingredients.org/surfactants-emulsifying-agents/4663/",
+          "note": "JCIA 化粧品成分表示名称辞典은 회원제로 직접 검증 불가. 복수 일본 보조 출처에서 '(アクリレーツ／アクリル酸アルキル(C10-30))クロスポリマー'로 일치 확인. 의약부외품 원료규격명은 '아크릴산·메타크릴산알킬공중합체(アクリル酸・メタクリル酸アルキル共重合体)'로 별도. cosmetic-info.jp도 같은 명칭 표기를 가지나 GeoIP 차단으로 직접 검증은 못함."
+        }
+      },
+      "verify_status": "completed",
+      "cached_at": "2026-05-22T06:39:12.762Z",
+      "last_accessed": "2026-05-22T17:25:37.688Z",
+      "lookup_count": 1
+    }
+  },
+  "adlawSamples": {
+    "sample_cosmetic_violations": {
+      "input": {
+        "copy": "シミが消える美白化粧水で若返り効果バツグン！医師も推奨の話題の商品。",
+        "category": "cosmetic",
+        "laws": [
+          "yakki",
+          "keihyou"
+        ],
+        "subcategory": "화장수"
+      },
+      "analysis": {
+        "violations": [
+          {
+            "text": "シミが消える",
+            "law": "薬機法",
+            "article": "医薬品等適正広告基準 第3-2",
+            "severity": "danger",
+            "reason": "\"消える(없어진다)\"는 의학적·치료적 효과를 단정한 표현. 화장품은 56효능 범위(\"メラニンの生成を抑え、シミ・ソバカスを防ぐ\")까지만 가능하며, 이미 생긴 シミ를 없앤다고 표시하면 약기법 위반.",
+            "alternatives": [
+              "メラニンの生成を抑え、シミ・ソバカスを防ぐ",
+              "透明感のある明るい印象の肌へ",
+              "シミ・ソバカスを防いで、澄み渡るような肌印象に"
+            ],
+            "ref": "화장품 효능 56개 중 #36 \"メラニンの生成を抑え、シミ・ソバカスを防ぐ\" / 후생노동성「医薬品等適正広告基準」"
+          },
+          {
+            "text": "美白",
+            "law": "薬機法",
+            "article": "医薬品等適正広告基準 第3-2 / 화장품 효능 범위",
+            "severity": "warn",
+            "reason": "\"美白\" 단어 자체는 사용 가능하지만, 화장품에서는 반드시 \"メラニンの生成を抑え、シミ・ソバカスを防ぐ\" 의미로 한정. 의약외품(医薬部外品)으로 등록되지 않은 일반 화장품에 \"美白\"만 단독 강조는 의약외품 오인 유발 우려.",
+            "alternatives": [
+              "メラニンの生成を抑え、シミ・ソバカスを防ぐ美容液",
+              "澄んだ印象の肌を目指す美容液",
+              "明るい印象に整える美容液"
+            ],
+            "ref": "의약외품 등록 시 \"薬用美白\" 표시 가능 / 일반 화장품은 효능 한정 표시 권장"
+          },
+          {
+            "text": "若返り効果",
+            "law": "薬機法",
+            "article": "医薬品等適正広告基準 第3-2",
+            "severity": "danger",
+            "reason": "\"若返り(회춘)\"은 화장품 56효능에 없는 표현. 안티에이징은 \"乾燥による小じわを目立たなくする\"(건조에 의한 잔주름을 눈에 띄지 않게)까지만 가능.",
+            "alternatives": [
+              "乾燥による小じわを目立たなくする",
+              "ハリのある印象へ整える",
+              "年齢に応じたうるおいケア"
+            ],
+            "ref": "화장품 효능 56개 중 #56 (잔주름 한정 효능)"
+          },
+          {
+            "text": "医師も推奨",
+            "law": "医薬品等適正広告基準",
+            "article": "第4-5 (의료관계자 추천)",
+            "severity": "danger",
+            "reason": "\"医師\" 등 의료관계자가 추천한다는 표현은 일반 소비자에게 의약품 같은 효과를 오인시킬 우려가 있어 명확히 금지.",
+            "alternatives": [
+              "美容のプロが選ぶ",
+              "@cosmeで話題の",
+              "愛用者続出の人気アイテム"
+            ],
+            "ref": "医薬品等適正広告基準 第4-5"
+          },
+          {
+            "text": "バツグン",
+            "law": "景品表示法",
+            "article": "優良誤認表示 第5条第1号",
+            "severity": "warn",
+            "reason": "\"バツグン(발군)\"은 효과를 단정·과장하는 표현으로, 합리적 근거 없이 사용 시 우월 오인 표시(優良誤認)에 해당할 가능성이 있음.",
+            "alternatives": [
+              "うるおい実感",
+              "実感の高い使い心地",
+              "リピーター続出"
+            ],
+            "ref": "景品表示法 第5条第1号 / 消費者庁「化粧品の効果効能に関する表示」"
+          }
+        ],
+        "safeGuide": [
+          "미백계: \"メラニンの生成を抑え、シミ・ソバカスを防ぐ\" (효능 #36)",
+          "에이징케어계: \"乾燥による小じわを目立たなくする\" (효능 #56, 한정 조건 있음)",
+          "효능 강조 시: 개인 감상·이미지 표현으로 한정 (예: \"~な印象へ\", \"~ような肌に\")",
+          "의료인 추천 → \"美容のプロ\", \"@cosme\" 같은 일반 시장 평가로 대체",
+          "\"バツグン\", \"絶対\", \"必ず\" 등 단정 표현 회피"
+        ],
+        "finalDrafts": [
+          {
+            "label": "🟢 안심형 (보수적)",
+            "text": "メラニンの生成を抑え、シミ・ソバカスを防ぐ化粧水。乾燥によるくすみが気になる肌をうるおいで満たし、すこやかな印象へ整えます。",
+            "reason": "56효능 범위 내 표현만 사용. 단정 표현 모두 제거. 약기법·경표법 위반 가능성 거의 0. 의약외품 등록 안 된 일반 화장품 카피 안전."
+          },
+          {
+            "label": "🟡 균형형",
+            "text": "気になるシミ・ソバカスを防ぎ*¹、透明感のある明るい印象の肌へ。乾燥小じわを目立たなくする*² 集中ケア化粧水。\n\n*¹ メラニンの生成を抑える / *² 효능평가시험 완료",
+            "reason": "56효능 활용 + \"印象\" 표현으로 어필. *주석으로 한정 명시. 실무에서 가장 자주 채택되는 톤. 위반 리스크 낮음."
+          },
+          {
+            "label": "🔵 어필-원문유지형",
+            "text": "澄み渡るような肌印象へ*¹。メラニンの生成を抑え、シミ・ソバカスを防ぐ集中美白*² 化粧水。@cosmeでも話題の人気アイテム。\n\n*¹ うるおいによる / *² メラニンの生成を抑え、シミ・ソバカスを防ぐ",
+            "reason": "원문의 미백·인기 소구점 유지하면서 위반 표현 모두 합법 표현으로 치환. *주석 한정 표시 적극 활용. 의료인 추천 → @cosme 평가로 대체."
+          }
+        ],
+        "sources": [
+          "후생노동성「医薬品等適正広告基準」",
+          "화장품 효능 56개 가이드 (#36 미백 / #56 잔주름 한정)",
+          "消費者庁 景品表示法 第5条第1号 (우월 오인 표시)",
+          "医薬品等適正広告基準 第4-5 (의료관계자 추천 금지)"
+        ]
+      }
+    },
+    "sample_healthfood_violations": {
+      "input": {
+        "copy": "飲むだけで肌がプルプルに！コラーゲンドリンクで若返り、シワも改善。臨床試験で効果実証済み！",
+        "category": "health_food",
+        "laws": [
+          "kenzou",
+          "shokuhin",
+          "keihyou"
+        ],
+        "subcategory": "기능성표시"
+      },
+      "analysis": {
+        "violations": [
+          {
+            "text": "肌がプルプルに",
+            "law": "健康増進法",
+            "article": "第65条 (虚偽誇大表示の禁止)",
+            "severity": "warn",
+            "reason": "건기식·일반식품에서 \"피부가 탱탱해진다\" 같은 신체 부위에 대한 효능 단정 표현은 의약품 오인 유발 우려. 기능성표시식품이라도 사전 신고된 기능성 표시 범위 내에서만 가능.",
+            "alternatives": [
+              "みずみずしい毎日をサポート",
+              "美容と健康を考えるあなたへ",
+              "ハリのある美しさを目指す方に"
+            ],
+            "ref": "健康増進法 第65条 / 機能性表示食品 신고 가이드라인"
+          },
+          {
+            "text": "若返り",
+            "law": "薬機法",
+            "article": "第66条 (의약품의 오인 표시 금지)",
+            "severity": "danger",
+            "reason": "\"若返り(회춘)\"은 의약품적 효과를 시사하는 강력한 단정. 식품(건기식 포함)에서는 약기법 위반.",
+            "alternatives": [
+              "年齢を重ねる毎日に",
+              "美しい毎日を応援",
+              "いきいきとした輝きを"
+            ],
+            "ref": "薬機法 第66条 / 미약품 오인 표시"
+          },
+          {
+            "text": "シワも改善",
+            "law": "薬機法",
+            "article": "第66条 / 健康増進法",
+            "severity": "danger",
+            "reason": "식품에서 \"주름 개선\"이라는 신체 변화는 의약품의 효능. 기능성표시식품이라도 사전 신고된 표시 범위가 아니면 사용 불가.",
+            "alternatives": [
+              "美容を意識するあなたへ",
+              "うるおい習慣をサポート",
+              "健やかな毎日のために"
+            ],
+            "ref": "薬機法 第66条 / 機能性表示食品 신고 범위 외"
+          },
+          {
+            "text": "臨床試験で効果実証済み",
+            "law": "景品表示法",
+            "article": "第5条第1号 (優良誤認)",
+            "severity": "warn",
+            "reason": "\"임상시험으로 효과 입증됨\" 표현은 의약품 오인 + 합리적 근거 없을 시 우월 오인 표시. 기능성표시식품도 \"체에서 보고된 연구\" 정도로 한정 표시 필요.",
+            "alternatives": [
+              "※科学的根拠については販売者のウェブサイトで確認できます",
+              "研究報告のあるコラーゲンペプチド配合",
+              "機能性表示食品として届出済み（届出番号: XXX）"
+            ],
+            "ref": "景品表示法 第5条第1号 / 機能性表示食品 표시 가이드라인"
+          }
+        ],
+        "safeGuide": [
+          "건기식·일반식품: 신체 부위 효능 직접 단정 X. 이미지 표현(\"~な毎日\", \"~を目指す方に\")으로 우회.",
+          "기능성표시식품: 사전 신고된 기능성 표시 문구 내에서만 효능 언급 가능.",
+          "\"臨床試験\" \"効果実証\" → \"科学的根拠については販売者ウェブサイト\"로 대체.",
+          "구매 의욕 강조 시 \"美容・健康習慣\" \"あなたの毎日に\" 같은 라이프스타일 메시지 활용."
+        ],
+        "finalDrafts": [
+          {
+            "label": "🟢 안심형 (보수적)",
+            "text": "コラーゲンペプチド配合のドリンク。美容と健康を意識するあなたの毎日に、おいしくスマートにプラス。\n\n※本品は機能性表示食品ではありません。",
+            "reason": "효능 단정 표현 모두 제거. 일반식품으로서 안전한 라이프스타일 메시지만 사용. 약기법·건강증진법 위반 우려 거의 0."
+          },
+          {
+            "label": "🟡 균형형",
+            "text": "気になる年齢にコラーゲンペプチド*¹。みずみずしい毎日を意識する方へ、おいしく続けるドリンク習慣。\n\n*¹ 機能性関与成分として届出済み（届出番号: XXX）",
+            "reason": "기능성표시식품으로 등록된 경우 안전한 톤. 신고번호 표시로 신뢰성 확보. 효능은 \"의식하는 방\" 정도로 한정."
+          },
+          {
+            "label": "🔵 어필-원문유지형",
+            "text": "飲む美容習慣 — コラーゲンペプチド配合*¹ のドリンク。年齢を重ねる毎日に、ハリを意識した美容ケアを*²。\n\n*¹ 機能性関与成分として届出済み（届出番号: XXX）/ *² 個人の感想であり効果を保証するものではありません",
+            "reason": "원문의 \"飲むだけで\" \"プルプル\" 같은 강한 어필 소구점을 \"美容ケア\" \"ハリを意識\"로 합법화. *주석 한정 표시 활용으로 위반 표현 안전 처리."
+          }
+        ],
+        "sources": [
+          "薬機法 第66条 (의약품 오인 표시 금지)",
+          "健康増進法 第65条 (허위·과대 표시 금지)",
+          "景品表示法 第5条第1号 (우월 오인 표시)",
+          "消費者庁「機能性表示食品 표시 가이드라인」"
+        ]
+      }
+    }
+  },
+  "meta": {
+    "categories": [
+      {
+        "key": "cosmetic",
+        "label": "화장품"
+      },
+      {
+        "key": "quasi_drug",
+        "label": "의약외품"
+      },
+      {
+        "key": "health_food",
+        "label": "건강기능식품"
+      },
+      {
+        "key": "general_food",
+        "label": "일반식품"
+      },
+      {
+        "key": "other",
+        "label": "기타"
+      }
+    ],
+    "laws": [
+      {
+        "key": "yakki",
+        "label": "薬機法",
+        "desc": "의약품·의약외품·화장품·의료기기 광고 규제"
+      },
+      {
+        "key": "keihyou",
+        "label": "景品表示法",
+        "desc": "우월 오인·유리 오인·스텔스마케팅"
+      },
+      {
+        "key": "kenzou",
+        "label": "健康増進法",
+        "desc": "식품·건기식 건강 효과 표현"
+      },
+      {
+        "key": "shokuhin",
+        "label": "食品表示法",
+        "desc": "식품·건기식 영양·알레르기 표시"
+      }
+    ],
+    "autoLaws": {
+      "cosmetic": [
+        "yakki",
+        "keihyou"
+      ],
+      "quasi_drug": [
+        "yakki",
+        "keihyou"
+      ],
+      "health_food": [
+        "kenzou",
+        "shokuhin",
+        "keihyou"
+      ],
+      "general_food": [
+        "shokuhin",
+        "kenzou",
+        "keihyou"
+      ],
+      "other": []
+    },
+    "subcategories": {
+      "cosmetic": [
+        {
+          "group": "스킨케어",
+          "items": [
+            {
+              "value": "화장수",
+              "label": "화장수 (토너·스킨)"
+            },
+            {
+              "value": "에센스",
+              "label": "에센스·세럼"
+            },
+            {
+              "value": "크림",
+              "label": "크림·로션"
+            },
+            {
+              "value": "마스크",
+              "label": "마스크팩"
+            }
+          ]
+        },
+        {
+          "group": "클렌징",
+          "items": [
+            {
+              "value": "클렌징",
+              "label": "클렌징 (폼·오일·워터)"
+            }
+          ]
+        },
+        {
+          "group": "메이크업",
+          "items": [
+            {
+              "value": "베이스",
+              "label": "베이스 메이크업"
+            },
+            {
+              "value": "색조",
+              "label": "색조 메이크업"
+            },
+            {
+              "value": "선케어",
+              "label": "자외선 차단제"
+            }
+          ]
+        }
+      ],
+      "health_food": [
+        {
+          "group": "기능성표시식품",
+          "items": [
+            {
+              "value": "기능성표시",
+              "label": "機能性表示食品"
+            }
+          ]
+        },
+        {
+          "group": "특정보건용식품",
+          "items": [
+            {
+              "value": "특보",
+              "label": "特定保健用食品 (특보)"
+            }
+          ]
+        }
+      ]
+    },
+    "cosmeticInfo": {
+      "accessible": false,
+      "skipped": true,
+      "last_attempted": null,
+      "last_accessible": null,
+      "newly_accessible": false
+    }
+  },
+  "generated_at": "2026-05-22T17:29:42.238Z"
+}

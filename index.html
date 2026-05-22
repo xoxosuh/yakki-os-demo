@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yakki-os ⚖️ 일본 광고법·薬機法 체크</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="logo">⚖️</span>
+      <div>
+        <h1>yakki-os</h1>
+        <p class="tagline">일본 광고법·薬機法 위반 검사</p>
+      </div>
+    </div>
+    <div class="meta">
+      <span class="badge">BEON</span>
+      <span class="badge alt">v0.1 · Day 1</span>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- 탭 메뉴 -->
+    <nav class="tabs" role="tablist">
+      <button class="tab-btn active" data-tab="houcheck" role="tab" aria-selected="true">
+        ⚖️ 광고법·薬機法 체크
+      </button>
+      <button class="tab-btn" data-tab="ingredients" role="tab" aria-selected="false">
+        🧪 성분명 변환
+      </button>
+    </nav>
+
+    <!-- ━━━━━━ 탭 1: 광고법·薬機法 체크 ━━━━━━ -->
+    <div class="tab-panel" id="tab-houcheck" role="tabpanel">
+
+    <!-- 입력 섹션 -->
+    <section class="card input-card">
+      <h2>📝 카피 입력</h2>
+
+      <div class="field">
+        <label for="copy">검사할 일본어 카피</label>
+        <textarea
+          id="copy"
+          rows="6"
+          placeholder="예) シミが消える美白化粧水で若返り効果バツグン！医師も推奨の話題の商品。"
+        ></textarea>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label>📦 카테고리</label>
+          <div class="radio-group" id="category-group">
+            <!-- JS로 채움 -->
+          </div>
+        </div>
+
+        <div class="field">
+          <label>⚖️ 적용 법규
+            <span class="hint">(카테고리 선택 시 자동 추천. 클릭하면 상세 가이드)</span>
+          </label>
+          <div class="checkbox-group" id="laws-group">
+            <!-- JS로 채움 -->
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label>📋 상품군
+          <span class="hint">(선택 — 정확도 ↑. 미선택 시 AI가 카피에서 추론)</span>
+        </label>
+        <div class="subcategory-wrap">
+          <select id="subcategory-select" class="subcategory-select">
+            <option value="">— 선택 안 함 (자동 추론) —</option>
+          </select>
+          <input
+            type="text"
+            id="subcategory-custom"
+            class="subcategory-custom"
+            placeholder="직접 입력 (예: 두피 토닉, 페미닌 워시 등)"
+            hidden
+          >
+        </div>
+      </div>
+
+      <button id="check-btn" class="primary-btn">
+        🚀 검사 실행
+      </button>
+      <p class="loading-text" id="loading-text" hidden>
+        <span class="spinner"></span>
+        Claude가 자료 읽고 검사 중... (보통 30~90초)
+      </p>
+    </section>
+
+    <!-- 결과 섹션 -->
+    <section class="results" id="results" hidden>
+      <!-- Claude 분석 (전체 폭) -->
+      <div class="card result-card">
+        <h2>💬 Claude 분석
+          <span class="badge bg-claude">백그라운드</span>
+        </h2>
+        <div id="claude-result" class="result-body">
+          <!-- JS로 채움 -->
+        </div>
+      </div>
+
+      <!-- 최종 답안 (3가지 안) -->
+      <div class="card final-card">
+        <h2>✅ 최종 답안 — 3가지 안 (각각 편집·복사 가능)</h2>
+        <p class="hint">Claude가 보수 → 강조 방향으로 3개 안을 제안합니다. 각 안에 작성 이유 포함.</p>
+        <div id="final-drafts" class="final-drafts-grid">
+          <!-- JS로 채움 -->
+        </div>
+      </div>
+
+      <!-- 출처 -->
+      <div class="card sources-card">
+        <h2>📎 출처</h2>
+        <ul id="sources-list">
+          <!-- JS로 채움 -->
+        </ul>
+      </div>
+    </section>
+
+    <!-- 에러 -->
+    <section id="error-box" class="error-box" hidden>
+      <h2>⚠️ 오류</h2>
+      <pre id="error-text"></pre>
+    </section>
+
+    </div>
+    <!-- ━━━━━━ /탭 1 ━━━━━━ -->
+
+    <!-- ━━━━━━ 탭 2: 성분명 변환 ━━━━━━ -->
+    <div class="tab-panel" id="tab-ingredients" role="tabpanel" hidden>
+
+      <!-- 우상단 도구바: 캐시 목록 + 즐겨찾기 -->
+      <div class="ing-toolbar">
+        <button id="cachelist-toggle-btn" class="cachelist-toggle-btn" title="캐시 목록 열기">
+          📦 캐시 목록 <span class="cache-count" id="cache-count">0</span>
+        </button>
+        <button id="favorites-toggle-btn" class="favorites-toggle-btn" title="즐겨찾기 열기">
+          ⭐ 즐겨찾기 <span class="fav-count" id="fav-count">0</span>
+        </button>
+      </div>
+
+      <!-- 입력 카드 -->
+      <section class="card input-card">
+        <h2>🧪 성분명 변환</h2>
+        <p class="hint" style="margin-bottom:16px">
+          한국어·영어·일본어 성분명을 입력하면 일본 정식 표시명(JCIA)·INCI·학명·식약처 표기를 알려줍니다.
+        </p>
+
+        <div class="field">
+          <label for="ing-input">🔍 성분명 입력</label>
+          <div class="ing-input-wrap">
+            <input
+              type="text"
+              id="ing-input"
+              class="ing-input"
+              placeholder="예) 병풀추출물 / Centella Asiatica Extract / ツボクサエキス"
+              autocomplete="off"
+            >
+            <span class="ing-lang-badge" id="ing-lang-badge">감지: —</span>
+          </div>
+          <div class="ing-cache-status-row" id="ing-cache-status-row" hidden>
+            <button type="button" class="ing-cache-badge" id="ing-cache-badge" hidden></button>
+          </div>
+          <p class="hint" id="ing-lang-hint">
+            언어는 자동 감지됩니다. 한국어로 검색 후 결과가 부족하면 영어 INCI로 재검색하는 것을 권장합니다.
+          </p>
+        </div>
+
+        <div class="field">
+          <label>📦 용도 (카테고리)</label>
+          <div class="radio-group" id="ing-category-group">
+            <label class="option-row selected" data-ing-category="cosmetic">
+              <input type="radio" name="ing-category" value="cosmetic" checked>
+              <span>화장품 (化粧品)</span>
+              <span class="law-desc">스킨케어·메이크업·헤어·바디 등</span>
+            </label>
+            <label class="option-row" data-ing-category="health_food">
+              <input type="radio" name="ing-category" value="health_food">
+              <span>건기식 (機能性表示食品 등)</span>
+              <span class="law-desc">특보·기능성 표시·영양 기능 식품</span>
+            </label>
+            <label class="option-row" data-ing-category="general_food">
+              <input type="radio" name="ing-category" value="general_food">
+              <span>일반식품 (一般食品)</span>
+              <span class="law-desc">가공식품·음료 등</span>
+            </label>
+            <label class="option-row" data-ing-category="unified">
+              <input type="radio" name="ing-category" value="unified">
+              <span>통합 검색</span>
+              <span class="law-desc">모든 카테고리 정보를 함께 표시</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="ing-search-actions">
+          <button id="ing-search-btn" class="primary-btn">
+            🔍 검색
+          </button>
+          <button id="ing-stop-btn" class="secondary-btn danger" hidden>
+            ⏹ 중지
+          </button>
+        </div>
+        <p class="loading-text" id="ing-loading" hidden>
+          <span class="spinner"></span>
+          공식 출처 검증 중... (첫 검색 15~30초, 캐시 히트는 즉시)
+        </p>
+
+        <!-- 일괄 검색 펼침 영역 -->
+        <div class="bulk-toggle-wrap">
+          <button class="bulk-toggle-btn" id="bulk-toggle-btn">
+            ▼ 📋 여러 개 한 번에 검색 (펼치기)
+          </button>
+        </div>
+        <div class="bulk-search-area" id="bulk-search-area" hidden>
+          <p class="hint">
+            여러 성분명을 한 번에 캐시에 채워두면, 이후 개별 검색은 즉시 응답.
+            한 줄에 하나씩, 또는 쉼표로 구분.
+            <strong>중복은 자동 제거</strong>됩니다.
+          </p>
+          <textarea
+            id="bulk-input"
+            class="bulk-input"
+            rows="8"
+            placeholder="예시:&#10;병풀추출물&#10;히알루론산&#10;나이아신아마이드&#10;Niacinamide&#10;アスコルビン酸"
+          ></textarea>
+          <p class="hint">
+            카테고리는 위에서 선택한 것 (<strong id="bulk-cat-display">화장품</strong>)이 적용됩니다.
+            동시 3개 처리, 10개 기준 약 2~3분 예상.
+          </p>
+          <div class="bulk-cache-mode">
+            <label class="bulk-cache-mode-label">
+              <input type="checkbox" id="bulk-force-new">
+              <span>🔄 캐시에 있어도 강제로 새로 수집</span>
+              <span class="hint">(체크 안 하면 캐시는 그대로 사용 — 권장)</span>
+            </label>
+          </div>
+          <div class="bulk-actions">
+            <button class="primary-btn" id="bulk-search-btn" disabled>
+              🚀 일괄 검색 시작 (0개)
+            </button>
+            <button class="secondary-btn danger" id="bulk-stop-btn" hidden>
+              ⏹ 중단
+            </button>
+          </div>
+        </div>
+
+        <!-- 진행 상황 표시 -->
+        <div class="bulk-progress" id="bulk-progress" hidden></div>
+      </section>
+
+      <!-- 결과 영역 (다음 세션에 구현) -->
+      <section class="card placeholder-card" id="ing-result-placeholder">
+        <div class="placeholder-content">
+          <p class="placeholder-icon">⬇️</p>
+          <h3>여기에 검색 결과가 표시됩니다</h3>
+          <p>다음 세션에서 백엔드 검색·결과 UI를 구현하면 이 자리에 다음 정보가 나옵니다:</p>
+          <ul>
+            <li>📌 정식 표기 4종 (일본어·영어 INCI·학명·한국 식약처) — ✅ 공식 출처 검증</li>
+            <li>🔀 일본 시장 변형·NG 표기</li>
+            <li>📚 사용 용도·일반 효능</li>
+            <li>📎 출처 신뢰도 모달</li>
+            <li>⚖️ 광고법 체크 메뉴 자동 연결 버튼</li>
+          </ul>
+          <p class="placeholder-roadmap"><strong>구현 단계:</strong></p>
+          <ul>
+            <li>✅ 세션 1: 탭 메뉴</li>
+            <li>✅ 세션 2: 입력 UI (지금)</li>
+            <li>⬜ 세션 3a: 백엔드 (Claude + 캐시)</li>
+            <li>⬜ 세션 3b: 웹서치 교차 검증 + 신뢰도 라벨</li>
+            <li>⬜ 세션 4: 결과 UI</li>
+            <li>⬜ 세션 5: 신뢰도 모달</li>
+            <li>⬜ 세션 6: 테스트·디버깅</li>
+            <li>⬜ 세션 7: 즐겨찾기</li>
+            <li>⬜ 세션 8: 일괄 검색</li>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+    <!-- ━━━━━━ /탭 2 ━━━━━━ -->
+
+  </main>
+
+  <!-- 📦 캐시 목록 사이드바 (우측 슬라이드) -->
+  <div class="cachelist-overlay" id="cachelist-overlay"></div>
+  <aside class="cachelist-sidebar" id="cachelist-sidebar">
+    <header class="cachelist-sidebar-header">
+      <h3>📦 캐시 목록 <span class="cache-total" id="cache-total">0</span></h3>
+      <button class="cachelist-sidebar-close" id="cachelist-sidebar-close" title="닫기">✕</button>
+    </header>
+    <div class="cachelist-sidebar-hint">
+      💡 클릭=즉시검색 · 🗑=캐시 삭제 (즐겨찾기에도 있으면 함께 삭제) · ⭐=즐겨찾기 토글
+    </div>
+    <div class="cachelist-controls">
+      <input type="text" id="cache-filter-input" class="cache-filter-input" placeholder="🔍 이름으로 필터..." autocomplete="off">
+      <div class="cache-cat-tabs" id="cache-cat-tabs">
+        <!-- JS로 채움 -->
+      </div>
+      <div class="cache-sort-row">
+        <label class="cache-sort-label">정렬:</label>
+        <select id="cache-sort-select" class="cache-sort-select">
+          <option value="recent">최근 사용</option>
+          <option value="popular">자주 사용</option>
+          <option value="oldest">오래된 순</option>
+          <option value="alpha">가나다 / ABC</option>
+        </select>
+      </div>
+    </div>
+    <div class="cachelist-sidebar-body" id="cachelist-sidebar-body">
+      <!-- JS로 채움 -->
+    </div>
+  </aside>
+
+  <!-- ⭐ 즐겨찾기 사이드바 (우측 슬라이드) -->
+  <div class="favorites-overlay" id="favorites-overlay"></div>
+  <aside class="favorites-sidebar" id="favorites-sidebar">
+    <header class="favorites-sidebar-header">
+      <h3>⭐ 즐겨찾기 <span class="fav-total" id="fav-total">0</span></h3>
+      <button class="favorites-sidebar-close" id="favorites-sidebar-close" title="닫기">✕</button>
+    </header>
+    <div class="favorites-sidebar-hint">
+      💡 칩 클릭 = 즉시 검색 · 드래그 = 같은 카테고리 내 정렬 · ✎ = 메모 편집
+    </div>
+    <div class="favorites-sidebar-body" id="favorites-sidebar-body">
+      <!-- JS로 채움 -->
+    </div>
+  </aside>
+
+  <!-- 법규 가이드 모달 -->
+  <div class="modal" id="guide-modal" hidden>
+    <div class="modal-backdrop" id="guide-backdrop"></div>
+    <div class="modal-content">
+      <header class="modal-header">
+        <h2 id="guide-title">법규 가이드</h2>
+        <button class="modal-close" id="guide-close">✕</button>
+      </header>
+      <div class="modal-body" id="guide-body">
+        <!-- 마크다운 렌더링 -->
+      </div>
+    </div>
+  </div>
+
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
