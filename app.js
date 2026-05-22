@@ -226,17 +226,168 @@ if (DEMO_MODE) {
   };
 }
 
+// 데모 전용 CSS 주입 (style.css 안 건드림 — app.js만 업로드하면 적용됨)
+function _demoInjectCss() {
+  const style = document.createElement('style');
+  style.textContent = `
+    .demo-banner-btn {
+      background: #0d1117; color: #ffd33d;
+      padding: 4px 12px; border-radius: 4px;
+      font-weight: 600; margin-left: 6px; cursor: pointer;
+      border: none; font-family: inherit; font-size: 13px;
+      transition: all 0.15s;
+    }
+    .demo-banner-btn:hover { background: #161b22; transform: translateY(-1px); }
+
+    .demo-sample-section { margin-top: 24px; }
+    .demo-sample-section:first-child { margin-top: 0; }
+    .demo-sample-section h3 { margin-bottom: 8px; }
+
+    .demo-sample-ings {
+      display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px;
+    }
+    .demo-sample-ing-btn {
+      background: var(--bg-2); border: 1px solid var(--border);
+      color: var(--text-0); padding: 6px 12px; border-radius: 6px;
+      font-family: inherit; font-size: 12.5px; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 6px;
+      transition: all 0.15s;
+    }
+    .demo-sample-ing-btn:hover {
+      border-color: var(--caution); color: var(--caution);
+    }
+    .demo-sample-cat {
+      font-size: 10.5px; color: var(--text-2);
+      background: var(--bg-3); padding: 1px 6px; border-radius: 3px;
+    }
+
+    .demo-sample-card {
+      margin-bottom: 10px; background: var(--bg-2);
+      border: 1px solid var(--border); border-radius: 6px;
+      padding: 12px;
+    }
+    .demo-sample-head {
+      font-size: 13px; color: var(--text-1); margin-bottom: 6px;
+    }
+    .demo-sample-copy {
+      background: var(--bg-0); border: 1px solid var(--border);
+      border-radius: 4px; padding: 10px;
+      font-size: 12.5px; color: var(--text-0); line-height: 1.6;
+      white-space: pre-wrap; margin: 0 0 8px 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", system-ui, sans-serif;
+    }
+    .demo-sample-copy-btn {
+      background: var(--accent); border: none; color: #1d1500;
+      padding: 5px 14px; border-radius: 4px; font-weight: 600;
+      cursor: pointer; font-size: 12.5px; font-family: inherit;
+      transition: all 0.15s;
+    }
+    .demo-sample-copy-btn:hover { background: var(--accent-hover); }
+  `;
+  document.head.appendChild(style);
+}
+
+async function _demoShowSamplesModal() {
+  await _loadDemoData();
+  const ingredients = Object.values(demoData.ingredients);
+  const samples = demoData.adlawSamples;
+  const CAT = { cosmetic: '화장품', quasi_drug: '의약외품', health_food: '건기식', general_food: '일반식품', other: '기타' };
+
+  const ingListHtml = ingredients.map((ing) => {
+    const safeInput = String(ing.input).replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    return `<button class="demo-sample-ing-btn" data-input="${safeInput}" data-category="${ing.category}">
+      ${String(ing.input).replace(/</g, '&lt;')}
+      <span class="demo-sample-cat">${CAT[ing.category] || ing.category}</span>
+    </button>`;
+  }).join('');
+
+  const indices = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩'];
+  const sampleCards = Object.entries(samples).map(([, s], i) => {
+    const idx = indices[i] || (i + 1);
+    const catLabel = CAT[s.input.category] || s.input.category;
+    const sub = s.input.subcategory ? ' · ' + String(s.input.subcategory).replace(/</g, '&lt;') : '';
+    const safeCopy = String(s.input.copy).replace(/"/g, '&quot;').replace(/</g, '&lt;');
+    return `
+      <div class="demo-sample-card">
+        <div class="demo-sample-head">${idx} <strong>${catLabel}</strong>${sub}</div>
+        <pre class="demo-sample-copy">${String(s.input.copy).replace(/</g, '&lt;')}</pre>
+        <button class="demo-sample-copy-btn" data-text="${safeCopy}">📋 이 카피 복사</button>
+      </div>
+    `;
+  }).join('');
+
+  $('#guide-title').textContent = '📋 데모 샘플 목록';
+  $('#guide-body').innerHTML = `
+    <div class="demo-sample-section">
+      <h3>🧪 검색 가능한 성분 ${ingredients.length}개</h3>
+      <p class="hint">성분명 변환 탭에서 입력 시 검색됩니다. <strong>아래 칩 클릭 = 자동 검색</strong>.</p>
+      <div class="demo-sample-ings">${ingListHtml}</div>
+    </div>
+    <div class="demo-sample-section">
+      <h3>⚖️ 분석 가능한 광고법 카피 ${Object.keys(samples).length}개</h3>
+      <p class="hint">아래 카피를 복사 → 광고법 체크 탭의 카피 입력란에 붙여넣고 검사 실행.</p>
+      ${sampleCards}
+    </div>
+  `;
+  $('#guide-modal').hidden = false;
+
+  // 카피 복사 버튼
+  $('#guide-body').querySelectorAll('.demo-sample-copy-btn').forEach((btn) => {
+    btn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.text);
+        const orig = btn.textContent;
+        btn.textContent = '✅ 복사됨';
+        setTimeout(() => { btn.textContent = orig; }, 1500);
+      } catch (e) {
+        alert('복사 실패: ' + e.message);
+      }
+    });
+  });
+
+  // 성분 칩 클릭 → 모달 닫고 자동 검색
+  $('#guide-body').querySelectorAll('.demo-sample-ing-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const input = btn.dataset.input;
+      const category = btn.dataset.category;
+      hideGuide();
+      // 성분명 탭으로 전환
+      const tabBtn = document.querySelector('.tab-btn[data-tab="ingredients"]');
+      if (tabBtn) tabBtn.click();
+      // 카테고리 라디오 설정
+      const radio = document.querySelector(`input[name="ing-category"][value="${category}"]`);
+      if (radio) {
+        radio.checked = true;
+        radio.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+      // 입력 채우고 검색
+      const inputEl = $('#ing-input');
+      if (inputEl) {
+        inputEl.value = input;
+        state.ing.input = input;
+        state.ing.lang = detectLang(input);
+        updateLangBadge(state.ing.lang);
+        updateCacheBadge();
+        runIngredientSearch();
+      }
+    });
+  });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   if (!DEMO_MODE) return;
+  _demoInjectCss();
   const banner = document.createElement('div');
   banner.className = 'demo-banner';
   banner.innerHTML = `
     🎯 <strong>데모 모드</strong> — 이건 yakki-os의 미리보기입니다.
     검색 가능한 성분 <strong>10개</strong> / 광고법 분석 샘플 <strong>5개</strong>.
     실제 작동 버전은 비키 PC에서만 가능.
+    <button class="demo-banner-btn" id="demo-samples-btn">📋 샘플 보기</button>
     <a href="https://github.com/xoxosuh/yakki-os" target="_blank" rel="noopener">📦 전체 코드 보기</a>
   `;
   document.body.insertBefore(banner, document.body.firstChild);
+  document.getElementById('demo-samples-btn').addEventListener('click', _demoShowSamplesModal);
 });
 
 // ═══════════════════════════════════════════════════════════
